@@ -1,0 +1,8 @@
+body {
+    background-color: #ccc;
+  }
+
+img.resize {
+    max-width:3%;
+    max-height:3%;
+  }
