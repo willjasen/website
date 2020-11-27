@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Entropy &middot; </title>
+        <meta name="description" content="This article was originally published on March 19, 2014
+Information Entropy After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
+We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.78.2" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../../dist/site.css">
+        <link rel="stylesheet" href="../../dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+        
+
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a href="../../">willjasen</a>
+                            </h1>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container">
+        <header class="post-header">
+    <h1 class="post-title">Entropy</h1>
+    
+</header>
+
+        <div class="post-content clearfix">
+    
+
+    <p><em>This article was originally published on March 19, 2014</em></p>
+<h1 id="information-entropy">Information Entropy</h1>
+<p>After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).</p>
+<p>We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased. Information entropy is a little different than physical entropy, though there are related aspects. Information entropy describes how random the information is, though its entropy does not naturally increases over time. Information entropy was first describe by Claude Shannon in 1948.</p>
+<p>Shannon’s entropy equation is as follows:</p>
+<p><img src="../../posts/shannon_entropy_equation.png" alt="Entropy"></p>
+<p>where p(x) is the probability of a particular byte and n is the probability space. In the case of computer data, the maximum probability space is n = 256 because there are 256 possible bytes - 0x00 to 0xFF in hex. In practical applications, n can be smaller if a particular byte is not present within the information being calculated.</p>
+<p>Let’s simplify: what’s the entropy of a fair coin toss? This is calculated as:</p>
+<p><img src="../../posts/fair_coin_toss.png" alt="Fair Coin Toss"></p>
+<p>So the answer is 1. What does this mean? In full terms, it means that the amount of information retrieved from a fair coin flip is 1 bit of information per 1 bit of information, and this measurement verifies that the coin’s probability of outcomes is indeed fair. The coin is as random as it can be -  there isn’t anything more random than 50/50 with a coin flip.</p>
+<p>Let’s decrease the randomness of a coin flip by making the coin unfair by increasing the chance of heads to 75%:</p>
+<p><img src="../../posts/unfair_coin_toss.png" alt="Unfair Coin Toss"></p>
+<p>The entropy for this unfair coin toss is around 0.811, meaning that the amount of information retrieved from this unfair coin is around 0.811 bits of information per 1 bit of information. If the probability of heads in increased to 90%, that unfair coin has an even lower entropy than 0.811 bits per bit. Following this trend, as information becomes less random, its entropy becomes smaller relative to the amount of bits per unit of information. A coin with heads on both sides always lands heads and its entropy is exactly zero, meaning that no useful information is conveyed with this kind of coin flip.</p>
+<p>So calculating the entropy of a fair and unfair coin is interesting, but what practical uses does entropy have, you say? Cryptography algorithms increase entropy of unencrypted data by obscuring it such that without a decryption key, the encrypted information appears more random than the unencrypted information. Compression algorithms decrease the entropy of a file by removing redundant, less random data to lower the file’s size. In fact, from a computational complexity perspective, the amount of entropy of uncompressed data details the mathematical lower bound, which is the best any compression algorithm could ever hope to achieve. In computer and network security, high entropy data may indicate a malicious program trying to mask itself through encryption or obsufcation and low entropy data may indicate a non-compliance of an applied encryption security program, though each scenario depends on the environment and how its used.</p>
+<p>To calculate the entropy of a file, it must be read byte by byte. Each occurrence of a byte is added to a frequency array to keep track of how often a byte occurs. After the entire file is read, the frequency array is used to calculate the file’s entropy by summing each byte’s possibility multiplied by the logarithm of its possibility, and then the result is multiplied by negative one - Shannon’s entropy equation.</p>
+<p>To see Java code that calculates the entropy of a file at an entered file path, take a look at <a href="https://github.com/willjasen/entropy">https://github.com/willjasen/entropy</a></p>
+<p>And there you have it!</p>
+<p>Sources:</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Entropy_(information_theory)">http://en.wikipedia.org/wiki/Entropy_(information_theory)</a></li>
+<li><a href="http://blogs.cisco.com/security/on_information_entropy/">http://blogs.cisco.com/security/on_information_entropy/</a></li>
+<li><a href="http://examples.javacodegeeks.com/core-java/io/fileinputstream/read-file-in-byte-array-with-fileinputstream/">http://examples.javacodegeeks.com/core-java/io/fileinputstream/read-file-in-byte-array-with-fileinputstream/</a></li>
+</ul>
+
+</div>
+
+        <footer class="post-footer clearfix"><div class="share">
+    </div>
+</footer>
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a href="../../">willjasen</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#" aria-label="Back to Top">
+                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="../../js/jquery-1.11.3.min.js"></script>
+        <script src="../../js/jquery.fitvids.js"></script>
+        <script src="../../js/scripts.js"></script>
+    </body>
+</html>
+
