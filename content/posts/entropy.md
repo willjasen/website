@@ -40,5 +40,4 @@ And there you have it!
 Sources:
 
 - http://en.wikipedia.org/wiki/Entropy_(information_theory)
-- http://blogs.cisco.com/security/on_information_entropy/
 - http://examples.javacodegeeks.com/core-java/io/fileinputstream/read-file-in-byte-array-with-fileinputstream/
