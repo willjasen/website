@@ -1,12 +1,10 @@
 ---
-title: "Entropy"
+title: "Information Entropy"
 date: 2020-11-27T10:48:02-05:00
 draft: true
 ---
 
 *This article was originally published on March 19, 2014*
-
-# Information Entropy
 
 After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
 

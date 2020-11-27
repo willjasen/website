@@ -8,14 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Nov 2020 10:48:02 -0500</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Entropy</title>
+      <title>Information Entropy</title>
       <link>/posts/entropy/</link>
       <pubDate>Fri, 27 Nov 2020 10:48:02 -0500</pubDate>
       
       <guid>/posts/entropy/</guid>
       <description>This article was originally published on March 19, 2014
-Information Entropy After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
-We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased.</description>
+After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
+We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased. Information entropy is a little different than physical entropy, though there are related aspects.</description>
     </item>
     
     <item>
