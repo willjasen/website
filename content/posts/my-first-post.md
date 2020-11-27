@@ -7,6 +7,8 @@ draft: false
 This is a decentralized website built on the InterPlanetary File System and Ethereum,
 with some deployment help from Fleek and design management by Hugo.
 
-Ethereum: willjasen.eth (0x9d31409BB816043ad8caAEA2Cf5D47d9C36F1A29)
-![willjasen.eth](/posts/ethereum_qr_code.png)
-![](/posts/profile_pic.jpg)
+![Me](/posts/profile_pic.jpg)
+
+Bitcoin: bc1qffxk4uqgaspuv9w8tnt7qjs63hlvxyda6l38wl
+
+Ethereum: willjasen.eth (0xd495c2F79fd79aB8ec3037ef5156f365a6373656)
