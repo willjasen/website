@@ -8,7 +8,7 @@ draft: true
 
 After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
 
-We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased. Information entropy is a little different than physical entropy, though there are related aspects. Information entropy describes how random the information is, though its entropy does not naturally increases over time. Information entropy was first describe by Claude Shannon in 1948.
+We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased. Information entropy is a little different than physical entropy, though there are related aspects. Information entropy describes how random the information is, though its entropy does not naturally increase over time. Information entropy was first described by Claude Shannon in 1948.
 
 Shannon’s entropy equation is as follows:
 
