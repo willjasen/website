@@ -6,7 +6,18 @@
     <description>Recent content on willjasen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2020 21:27:40 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Nov 2020 10:48:02 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entropy</title>
+      <link>/posts/entropy/</link>
+      <pubDate>Fri, 27 Nov 2020 10:48:02 -0500</pubDate>
+      
+      <guid>/posts/entropy/</guid>
+      <description>This article was originally published on March 19, 2014
+Information Entropy After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
+We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>/about/</link>
@@ -24,7 +35,7 @@
       <guid>/posts/my-first-post/</guid>
       <description>This is a decentralized website built on the InterPlanetary File System and Ethereum, with some deployment help from Fleek and design management by Hugo.
 Bitcoin: bc1qffxk4uqgaspuv9w8tnt7qjs63hlvxyda6l38wl
-Ethereum: willjasen.eth (0x9d31409BB816043ad8caAEA2Cf5D47d9C36F1A29)</description>
+Ethereum: willjasen.eth (0xd495c2F79fd79aB8ec3037ef5156f365a6373656)</description>
     </item>
     
   </channel>
