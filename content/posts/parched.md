@@ -4,7 +4,7 @@ date: 2021-01-16T18:11:54-05:00
 draft: false
 ---
 
-*This was originally published on Reddit on November 23, 2019*
+*This was originally published on Reddit to /r/AntiAntiJokes on November 23, 2019*
 
 A parched man goes to a vending machine.
 
