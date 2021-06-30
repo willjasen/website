@@ -13,3 +13,5 @@ with some deployment help from Fleek and design management by Hugo.
 Bitcoin: bc1qffxk4uqgaspuv9w8tnt7qjs63hlvxyda6l38wl
 
 Ethereum: willjasen.eth (0xd495c2F79fd79aB8ec3037ef5156f365a6373656)
+
+View this website on the dark web: k75sefolynihr4wpig2e7dcf6kkyv6xruk5i2ewo2tziwfm3q2mqhpid.onion
