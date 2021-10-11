@@ -8,7 +8,7 @@ My name is Brandon and this is my website!
 This is a decentralized website built on the InterPlanetary File System and Ethereum,
 with some deployment help from Fleek and design management by Hugo.
 
-![Me](/posts/profile_pic.jpg)
+![Me](/posts/profile_pic.jpg#center)
 
 Bitcoin: bc1qffxk4uqgaspuv9w8tnt7qjs63hlvxyda6l38wl
 
