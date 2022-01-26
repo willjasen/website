@@ -10,6 +10,8 @@ with some deployment help from Fleek and design management by Hugo.
 
 ![Me](/posts/profile_pic.jpg#center)
 
+Twitter: @willjasen
+
 Bitcoin: bc1qffxk4uqgaspuv9w8tnt7qjs63hlvxyda6l38wl
 
 Ethereum: willjasen.eth (0x9d31409BB816043ad8caAEA2Cf5D47d9C36F1A29)
