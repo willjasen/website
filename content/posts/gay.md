@@ -1,7 +1,7 @@
 ---
 title: "On Being Gay"
 date: 2021-10-11T19:06:19-04:00
-draft: true
+draft: false
 ---
 
 “The thing you need to know is, it’s all about sex.”
@@ -13,4 +13,3 @@ Modern society has traditionally shunned homosexuality, sometimes leading to sit
 Because of this for me personally, being gay feels like the ultimate rebellion against a society that was predominantly against it and was pivotal in shaping me as an intellectual and free-thinker. Being told you can't be one way when you undoubtedly are. There's a reason they call it "be gay, do crime" - it's because it was illegal at some point, and still is in some places in the world.
 
 All in all, people are strange and come in all types.
-
