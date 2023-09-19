@@ -6,45 +6,43 @@
     <description>Recent content on willjasen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Nov 2022 22:22:25 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-
+    <lastBuildDate>Tue, 19 Sep 2023 08:30:00 -0400</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>On Being Gay</title>
-      <link>/posts/gay/</link>
-      <pubDate>Mon, 11 Oct 2021 19:06:19 -0400</pubDate>
-
-      <guid>/posts/gay/</guid>
-      <description>“The thing you need to know is, it’s all about sex.”
-These are the opening words in the US series premier of Queer as Folk, and yes, the first and last thing you should know is that it&amp;rsquo;s all about sex. Being gay is a sexual predisposition - one in which lots of people find themselves attracted to the same sex.
-Modern society has traditionally shunned homosexuality, sometimes leading to situations which finds people imprisoned or where those who are persecuted end their lives.</description>
+      <title>Resignation Letter</title>
+      <link>/posts/resignation-letter/</link>
+      <pubDate>Tue, 19 Sep 2023 08:30:00 -0400</pubDate>
+      
+      <guid>/posts/resignation-letter/</guid>
+      <description>Effective upon delivery, and after over eight years of duties, I am resigning from my position as Systems Developer at TUC Technologies.
+I have had an amazing time in those eight years and feel that I was able to provide knowledge and experience and had something unique and valuable to contribute, all the while continuing to learn, improve, and hone the craft of computing that intrigued and inspired me as a child which continued and cultivated into my career.</description>
     </item>
-
+    
     <item>
       <title>Family</title>
       <link>/posts/family/</link>
       <pubDate>Wed, 28 Apr 2021 12:19:00 -0400</pubDate>
-
+      
       <guid>/posts/family/</guid>
       <description>https://willjasen.family</description>
     </item>
-
+    
     <item>
       <title>Crypto Portfolio</title>
       <link>/posts/crypto-portfolio/</link>
       <pubDate>Sun, 18 Apr 2021 16:22:28 -0400</pubDate>
-
+      
       <guid>/posts/crypto-portfolio/</guid>
       <description>View my crypto portfolio here!
 https://www.cointracker.io/portfolio/22b336f4-77d4-4085-9ff1-16dac5494939
 View my mining stats here!
 https://www.f2pool.com/mining-user/fb3524b173c65643055e5b7316ce82fd</description>
     </item>
-
+    
     <item>
       <title>Parched</title>
       <link>/posts/parched/</link>
       <pubDate>Sat, 16 Jan 2021 18:11:54 -0500</pubDate>
-
+      
       <guid>/posts/parched/</guid>
       <description>This was originally published on Reddit to /r/AntiAntiJokes on November 23, 2019
 A parched man goes to a vending machine.
@@ -52,43 +50,43 @@ A parched man goes to a vending machine.
 That’s when he realized - all of his change was gone.
 The man, having attempted to obtain a rental movie, moves on to get a beverage. He finds a local bar, but as soon as he steps up to the bar to order, he realizes yet again that his change was gone.</description>
     </item>
-
+    
     <item>
       <title>Rainstash</title>
       <link>/posts/rainstash/</link>
       <pubDate>Fri, 27 Nov 2020 17:50:15 -0500</pubDate>
-
+      
       <guid>/posts/rainstash/</guid>
       <description>rainstash is an Amazon CloudFormation template for automating the setup of Resilio Sync in the Amazon cloud.
 rainstash and Amazon CloudFormation is completely free to use, however, Amazon may charge for the use of resources created with rainstash. rainstash uses the following cost-related services: EC2, S3, and data transfer.
 Due to technical and security considerations, rainstash by default only accepts encrypted read-only folder keys for the best security. That encrypted data itself resides on an encrypted virtual disk volume, but the instance is meant to be ephimeral.</description>
     </item>
-
+    
     <item>
       <title>Information Entropy</title>
       <link>/posts/entropy/</link>
       <pubDate>Fri, 27 Nov 2020 10:48:02 -0500</pubDate>
-
+      
       <guid>/posts/entropy/</guid>
       <description>This article was originally published on March 19, 2014
 After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
 We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased. Information entropy is a little different than physical entropy, though there are related aspects.</description>
     </item>
-
+    
     <item>
       <title>About</title>
       <link>/about/</link>
       <pubDate>Sun, 22 Nov 2020 21:36:27 -0500</pubDate>
-
+      
       <guid>/about/</guid>
       <description>This is me!</description>
     </item>
-
+    
     <item>
       <title>Welcome!</title>
       <link>/posts/welcome/</link>
       <pubDate>Sun, 22 Nov 2020 21:27:40 -0500</pubDate>
-
+      
       <guid>/posts/welcome/</guid>
       <description>My name is Brandon and this is my website!
 This is a decentralized website built on the InterPlanetary File System and Ethereum, with some deployment help from Fleek and design management by Hugo.
@@ -97,6 +95,6 @@ Bitcoin: bc1qffxk4uqgaspuv9w8tnt7qjs63hlvxyda6l38wl
 Ethereum: willjasen.eth (0x9d31409BB816043ad8caAEA2Cf5D47d9C36F1A29)
 View this website on the dark web: qx3t4c7kl5xru5mw4kyco3mzl5misru672rehfmj2oqczrizvezyumqd.onion</description>
     </item>
-
+    
   </channel>
 </rss>
