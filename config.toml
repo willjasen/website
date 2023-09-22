@@ -82,6 +82,7 @@ enableRobotsTXT = true
       Twitch = "willjasen"
       Skype = "willjasen"
       Tumblr = "willjasen"
+      Discord = "willjasen"
       # StableDiffusion = ""
 
     [params.page]
