@@ -3,16 +3,7 @@
         <title>All Posts - willjasen</title>
         <link>/posts/</link>
         <description>All Posts | willjasen</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 19 Sep 2023 08:30:00 -0400</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Resignation Letter</title>
-    <link>/posts/resignation-letter/</link>
-    <pubDate>Tue, 19 Sep 2023 08:30:00 -0400</pubDate>
-    <author>willjasen</author>
-    <guid>/posts/resignation-letter/</guid>
-    <description><![CDATA[Effective upon delivery, and after over eight years of duties, I am resigning from my position as Systems Developer at TUC Technologies.
-I have had an amazing time in those eight years and feel that I was able to provide knowledge and experience and had something unique and valuable to contribute, all the while continuing to learn, improve, and hone the craft of computing that intrigued and inspired me as a child which continued and cultivated into my career.]]></description>
-</item>
-<item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 11 Oct 2021 19:06:19 -0400</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
     <title>On Being Gay</title>
     <link>/posts/gay/</link>
     <pubDate>Mon, 11 Oct 2021 19:06:19 -0400</pubDate>
