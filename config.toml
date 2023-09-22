@@ -1,6 +1,70 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "willjasen"
-theme = "ghostwriter"
+theme = "LoveIt"
 relativeURLS=true
 googleAnalytics = "G-H5JWMTWEHQ"
+enableRobotsTXT = true
+
+[author]
+  name = "willjasen"
+  email = ""
+  link = "/posts/welcome"
+[parmas]
+  images = ["/profile_pic.jpg"]
+  [params.header]
+    [params.header.title]
+      name = ""
+  [params.footer]
+    copyright = false
+    author = false
+  [params.home]
+    [params.home.profile]
+      avatarURL = "/profile_pic.jpg"
+      subtitle = "willjasen"
+
+      [params.social]
+        GitHub = "willjasen"
+        Linkedin = "willjasen"
+        Twitter = "willjasen"
+        Instagram = "willjasen"
+        Facebook = "willjasen"
+        Keybase = "willjasen"
+        Pinterest = "willjasen"
+        Reddit = "willjasen"
+        Snapchat = "willjasen"
+        Soundcloud = "willjasen"
+        Spotify = "willjasen"
+        Paypal = "willjasen"
+        Foursquare = "willjasen"
+        Steam = "willjasen"
+        Twitch = "willjasen"
+        Skype = "willjasen"
+        Tumblr = "willjasen"
+
+      [params.page]
+        [params.page.share]
+        enable = true
+        Twitter = true
+        Facebook = true
+        Linkedin = true
+        Whatsapp = false
+        Pinterest = false
+        Tumblr = true
+        HackerNews = false
+        Reddit = true
+        VK = false
+        Buffer = false
+        Xing = false
+        Line = false
+        Instapaper = false
+        Pocket = false
+        Flipboard = false
+        Weibo = false
+        Blogger = false
+        Baidu = false
+        Odnoklassniki = false
+        Evernote = true
+        Skype = false
+        Trello = true
+        Mix = false
