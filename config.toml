@@ -13,6 +13,14 @@ enableRobotsTXT = true
 [menu]
   [[menu.main]]
       weight = 1
+      identifier = "about"
+      pre = ""
+      post = ""
+      name = "About"
+      url = "/posts/welcome/"
+      title = ""
+  [[menu.main]]
+      weight = 2
       identifier = "posts"
       pre = ""
       post = ""
@@ -37,6 +45,7 @@ enableRobotsTXT = true
     [params.home.profile]
       avatarURL = "/profile_pic.jpg"
       subtitle = "willjasen"
+      social = true
     [params.home.posts]
         enable = true
         paginate = 10
