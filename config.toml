@@ -29,7 +29,7 @@ enableRobotsTXT = true
       title = ""
 [params]
   title = "willjasen"
-  description = "transhumanist and high functioning loser; instantiated simulation, statically stuck in superposition, calculated computationally complex "
+  description = "transhumanist and high functioning loser; instantiated simulation, statically stuck in superposition, calculated computationally complex"
   images = ["/android-chrome-512x512.png"]
   [params.header]
     [params.header.title]
@@ -80,6 +80,7 @@ enableRobotsTXT = true
         Twitch = "willjasen"
         Skype = "willjasen"
         Tumblr = "willjasen"
+        # StableDiffusion = ""
 
       [params.page]
         [params.page.toc]
