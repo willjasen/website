@@ -19,11 +19,14 @@ enableRobotsTXT = true
       name = "Posts"
       url = "/posts/"
       title = ""
-[parmas]
-  images = ["/profile_pic.jpg"]
+[params]
+  title = "willjasen"
+  description = "transhumanist and high functioning loser; instantiated simulation, statically stuck in superposition, calculated computationally complex "
+  images = ["/android-chrome-512x512.png"]
   [params.header]
     [params.header.title]
       name = ""
+      logo = ""
   [params.footer]
     copyright = false
     author = false
@@ -37,6 +40,18 @@ enableRobotsTXT = true
     [params.home.posts]
         enable = true
         paginate = 10
+
+  [params.verification]
+
+  [params.seo]
+    image = "/profile_pic.jpg"
+    thumbnailUrl = "/profile_pic.jpg"
+
+  [params.analytics]
+  enable = true
+    [params.analytics.google]
+      id = "G-H5JWMTWEHQ"
+      anonymizeIP = true
 
       [params.social]
         GitHub = "willjasen"
@@ -62,6 +77,11 @@ enableRobotsTXT = true
           enable = true
           keepStatic = false
           auto = true
+        [params.page.seo]
+          images = ["/profile_pic.jpg"]
+          [params.page.seo.publisher]
+            name = "willjasen"
+            logoUrl = "/profile_pic.jpg"
         [params.page.share]
         enable = true
         Twitter = true
