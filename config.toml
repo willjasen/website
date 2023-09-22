@@ -10,6 +10,15 @@ enableRobotsTXT = true
   name = "willjasen"
   email = ""
   link = "/posts/welcome"
+[menu]
+  [[menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "Posts"
+      url = "/posts/"
+      title = ""
 [parmas]
   images = ["/profile_pic.jpg"]
   [params.header]
@@ -18,10 +27,16 @@ enableRobotsTXT = true
   [params.footer]
     copyright = false
     author = false
+  [params.app]
+    title = "willjasen"
+    noFavicon = false
   [params.home]
     [params.home.profile]
       avatarURL = "/profile_pic.jpg"
       subtitle = "willjasen"
+    [params.home.posts]
+        enable = true
+        paginate = 10
 
       [params.social]
         GitHub = "willjasen"
@@ -43,6 +58,10 @@ enableRobotsTXT = true
         Tumblr = "willjasen"
 
       [params.page]
+        [params.page.toc]
+          enable = true
+          keepStatic = false
+          auto = true
         [params.page.share]
         enable = true
         Twitter = true
