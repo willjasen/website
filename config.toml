@@ -10,6 +10,7 @@ enableRobotsTXT = true
   name = "willjasen"
   email = ""
   link = "/posts/welcome"
+
 [menu]
   [[menu.main]]
       weight = 1
@@ -27,6 +28,7 @@ enableRobotsTXT = true
       name = "Posts"
       url = "/posts/"
       title = ""
+
 [params]
   title = "willjasen"
   description = "transhumanist and high functioning loser; instantiated simulation, statically stuck in superposition, calculated computationally complex"
@@ -62,58 +64,58 @@ enableRobotsTXT = true
       id = "G-H5JWMTWEHQ"
       anonymizeIP = true
 
-      [params.social]
-        GitHub = "willjasen"
-        Linkedin = "willjasen"
-        Twitter = "willjasen"
-        Instagram = "willjasen"
-        Facebook = "willjasen"
-        Keybase = "willjasen"
-        Pinterest = "willjasen"
-        Reddit = "willjasen"
-        Snapchat = "willjasen"
-        Soundcloud = "willjasen"
-        Spotify = "willjasen"
-        Paypal = "willjasen"
-        Foursquare = "willjasen"
-        # Steam = "willjasen"
-        Twitch = "willjasen"
-        Skype = "willjasen"
-        Tumblr = "willjasen"
-        # StableDiffusion = ""
+    [params.social]
+      GitHub = "willjasen"
+      Linkedin = "willjasen"
+      Twitter = "willjasen"
+      Instagram = "willjasen"
+      Facebook = "willjasen"
+      Keybase = "willjasen"
+      Pinterest = "willjasen"
+      Reddit = "willjasen"
+      Snapchat = "willjasen"
+      Soundcloud = "willjasen"
+      Spotify = "willjasen"
+      Paypal = "willjasen"
+      Foursquare = "willjasen"
+      # Steam = "willjasen"
+      Twitch = "willjasen"
+      Skype = "willjasen"
+      Tumblr = "willjasen"
+      # StableDiffusion = ""
 
-      [params.page]
-        [params.page.toc]
-          enable = true
-          keepStatic = false
-          auto = true
-        [params.page.seo]
-          images = ["/profile_pic.jpg"]
-          [params.page.seo.publisher]
-            name = "willjasen"
-            logoUrl = "/profile_pic.jpg"
-        [params.page.share]
+    [params.page]
+      [params.page.toc]
         enable = true
-        Twitter = true
-        Facebook = true
-        Linkedin = true
-        Whatsapp = false
-        Pinterest = false
-        Tumblr = true
-        HackerNews = false
-        Reddit = true
-        VK = false
-        Buffer = false
-        Xing = false
-        Line = false
-        Instapaper = false
-        Pocket = false
-        Flipboard = false
-        Weibo = false
-        Blogger = false
-        Baidu = false
-        Odnoklassniki = false
-        Evernote = true
-        Skype = false
-        Trello = true
-        Mix = false
+        keepStatic = false
+        auto = true
+      [params.page.seo]
+        images = ["/profile_pic.jpg"]
+        [params.page.seo.publisher]
+          name = "willjasen"
+          logoUrl = "/profile_pic.jpg"
+        [params.page.share]
+          enable = true
+          Twitter = true
+          Facebook = true
+          Linkedin = true
+          Whatsapp = false
+          Pinterest = false
+          Tumblr = true
+          HackerNews = false
+          Reddit = true
+          VK = false
+          Buffer = false
+          Xing = false
+          Line = false
+          Instapaper = false
+          Pocket = false
+          Flipboard = false
+          Weibo = false
+          Blogger = false
+          Baidu = false
+          Odnoklassniki = false
+          Evernote = true
+          Skype = false
+          Trello = true
+          Mix = false
