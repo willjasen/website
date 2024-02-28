@@ -5,6 +5,7 @@ draft: false
 ---
 Here's some other websites I've made and manage!
 
+- [School](https://school.willjasen.com)
 - [Family](https://family.willjasen.com)
 - [My DNA](https://dna.willjasen.com)
 - [Old website](https://old.willjasen.com)
