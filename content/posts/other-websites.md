@@ -11,4 +11,4 @@ Here's some other websites I've made and manage! I use an [uptime dashboard](htt
 - [old website](https://old.willjasen.com) - the first website that i ever had
 - [nimbi](https://nimbi.it) - a cloudly vision
 - [rise to the challenge](https://levitating.ceo) - learn how to take your company to the next level
-- [codename: wallace-thrasher](https://stretchie.delivery) - a got a package for ya
+- [codename: wallace-thrasher](https://stretchie.delivery) - i got a package for ya
