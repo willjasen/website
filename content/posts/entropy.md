@@ -6,7 +6,7 @@ draft: false
 
 {{< katex >}}
 
-*This article was originally published on March 19, 2014*
+*This article was originally published on March 19, 2014 in correspondence with a talk I gave*
 
 After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
 
