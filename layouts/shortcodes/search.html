@@ -42,12 +42,12 @@
 
           if(this.value.trim() !== "") {
             if (results.length > 0) {
-            results.forEach(result => {
+              results.forEach(result => {
               const item = data.find(doc => doc.title === result.ref)
               const li = document.createElement('li')
               const a = document.createElement('a')
-              a.href = item.permalink
-              a.textContent = item.title
+              a.href = item.uri
+              a.textContent = `${item.title} (${item.date})`
               li.appendChild(a)
               resultsContainer.appendChild(li)
             })
