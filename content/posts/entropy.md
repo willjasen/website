@@ -4,6 +4,8 @@ date: 2020-11-27T10:48:02-05:00
 draft: false
 ---
 
+{{< katex >}}
+
 *This article was originally published on March 19, 2014*
 
 After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
@@ -12,7 +14,7 @@ We usually hear about entropy in regards to physics, in which it describes how r
 
 Shannon’s entropy equation is as follows:
 
-![Entropy](/posts/shannon_entropy_equation.png)
+$$ H(X) = -\sum_{i=1}^{n} p(x_i) \log_2 p(x_i) $$
 
 where p(x) is the probability of a particular byte and n is the probability space. In the case of computer data, the maximum probability space is n = 256 because there are 256 possible bytes - 0x00 to 0xFF in hex. In practical applications, n can be smaller if a particular byte is not present within the information being calculated.
 

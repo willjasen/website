@@ -9,7 +9,7 @@
   <meta property="og:title" content="Information Entropy">
   <meta property="og:description" content="This article was originally published on March 19, 2014
 After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
-We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased. Information entropy is a little different than physical entropy, though there are related aspects.">
+We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -22,7 +22,7 @@ We usually hear about entropy in regards to physics, in which it describes how r
   <meta name="twitter:title" content="Information Entropy">
   <meta name="twitter:description" content="This article was originally published on March 19, 2014
 After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
-We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased. Information entropy is a little different than physical entropy, though there are related aspects.">
+We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased.">
       <meta name="twitter:site" content="@willjasen">
 <meta name="application-name" content="willjasen">
 <meta name="apple-mobile-web-app-title" content="willjasen"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
@@ -38,7 +38,7 @@ We usually hear about entropy in regards to physics, in which it describes how r
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/\/localhost:1313\/posts\/entropy\/"
-        },"image": ["\/\/localhost:1313\/profile_pic.jpg"],"genre": "posts","wordcount":  633 ,
+        },"image": ["\/\/localhost:1313\/profile_pic.jpg"],"genre": "posts","wordcount":  641 ,
         "url": "\/\/localhost:1313\/posts\/entropy\/","datePublished": "2020-11-27T10:48:02-05:00","dateModified": "2020-11-27T10:48:02-05:00","publisher": {
             "@type": "Organization",
             "name": "willjasen","logo": "\/\/localhost:1313\/profile_pic.jpg"},"author": {
@@ -94,26 +94,33 @@ We usually hear about entropy in regards to physics, in which it describes how r
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Information Entropy</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="../../posts/welcome" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>willjasen</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2020-11-27">2020-11-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;633 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2020-11-27">2020-11-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;641 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p><em>This article was originally published on March 19, 2014</em></p>
+            </div><div class="content" id="content"><link rel="stylesheet" 
+	  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+	  crossorigin="anonymous"
+>
+<script defer 
+		src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+		crossorigin="anonymous"
+></script>
+<script defer 
+		src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+		crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"
+></script>
+
+<p><em>This article was originally published on March 19, 2014</em></p>
 <p>After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).</p>
 <p>We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased. Information entropy is a little different than physical entropy, though there are related aspects. Information entropy describes how random the information is, though its entropy does not naturally increase over time. Information entropy was first described by Claude Shannon in 1948.</p>
 <p>Shannon’s entropy equation is as follows:</p>
-<p><img
-        class="lazyload"
-        src="../../svg/loading.min.svg"
-        data-src="../../posts/shannon_entropy_equation.png"
-        data-srcset="../../posts/shannon_entropy_equation.png, ../../posts/shannon_entropy_equation.png 1.5x, ../../posts/shannon_entropy_equation.png 2x"
-        data-sizes="auto"
-        alt="/posts/shannon_entropy_equation.png"
-        title="Entropy" /></p>
+<p>$$ H(X) = -\sum_{i=1}^{n} p(x_i) \log_2 p(x_i) $$</p>
 <p>where p(x) is the probability of a particular byte and n is the probability space. In the case of computer data, the maximum probability space is n = 256 because there are 256 possible bytes - 0x00 to 0xFF in hex. In practical applications, n can be smaller if a particular byte is not present within the information being calculated.</p>
 <p>Let’s simplify: what’s the entropy of a fair coin toss? This is calculated as:</p>
 <p><img

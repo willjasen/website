@@ -58,9 +58,14 @@ Due to technical and security considerations, rainstash by default only accepts 
     <pubDate>Fri, 27 Nov 2020 10:48:02 -0500</pubDate>
     <author>willjasen</author>
     <guid>//localhost:1313/posts/entropy/</guid>
-    <description><![CDATA[This article was originally published on March 19, 2014
+    <description><![CDATA[Here is an inline math expression: (a^2 + b^2 = c^2).
+The following
+$$\int_{a}^{b} x^2 dx$$
+Is an integral
+Integrate $$\int x^3 dx$$
+This article was originally published on March 19, 2014
 After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
-We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased. Information entropy is a little different than physical entropy, though there are related aspects.]]></description>
+We usually hear about entropy in regards to physics, in which it describes how random a physical system is.]]></description>
 </item>
 <item>
     <title>Welcome!</title>
