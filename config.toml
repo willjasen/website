@@ -128,3 +128,6 @@ enableRobotsTXT = true
           Skype = false
           Trello = true
           Mix = false
+
+[outputs]
+  home = ["HTML", "JSON"]
