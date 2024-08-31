@@ -39,7 +39,7 @@ enableRobotsTXT = true
       logo = "/profile_pic.jpg"
   [params.footer]
     copyright = false
-    author = false
+    author = true
   [params.app]
     title = "willjasen"
     noFavicon = false
