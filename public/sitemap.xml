@@ -2,9 +2,10 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>//localhost:1313/search/</loc><lastmod>2024-08-31T08:56:42-04:00</lastmod></url><url>
+            <loc>//localhost:1313/</loc><lastmod>2024-08-31T08:56:42-04:00</lastmod></url><url>
             <loc>//localhost:1313/posts/other-websites/</loc><lastmod>2024-01-18T06:59:43-05:00</lastmod></url><url>
             <loc>//localhost:1313/posts/</loc><lastmod>2024-01-18T06:59:43-05:00</lastmod></url><url>
-            <loc>//localhost:1313/</loc><lastmod>2024-01-18T06:59:43-05:00</lastmod></url><url>
             <loc>//localhost:1313/posts/gay/</loc><lastmod>2021-10-11T19:06:19-04:00</lastmod></url><url>
             <loc>//localhost:1313/posts/family/</loc><lastmod>2021-04-28T12:19:00-04:00</lastmod></url><url>
             <loc>//localhost:1313/posts/parched/</loc><lastmod>2021-01-16T18:11:54-05:00</lastmod></url><url>

@@ -17,7 +17,7 @@ enableRobotsTXT = true
       identifier = "about"
       pre = ""
       post = ""
-      name = "About"
+      name = "about"
       url = "/posts/welcome/"
       title = ""
   [[menu.main]]
@@ -25,8 +25,16 @@ enableRobotsTXT = true
       identifier = "posts"
       pre = ""
       post = ""
-      name = "Posts"
+      name = "posts"
       url = "/posts/"
+      title = ""
+  [[menu.main]]
+      weight = 3
+      identifier = "search"
+      pre = ""
+      post = ""
+      name = "search"
+      url = "/search/"
       title = ""
 
 [params]
