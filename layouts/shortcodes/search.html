@@ -1,3 +1,4 @@
+<!-- layouts/shortcodes/search.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Results</title>
 </head>
+<!-- Include the Lunr.js script -->
+{{ partial "lunr-script.html" . }}
 <body>
     <input type="text" id="search-box" placeholder="Search...">
     <ul id="results"></ul>
-
-    <!-- Include the Lunr.js script -->
-    {{ partial "lunr-script.html" . }}
 
     <script>
     // Fetch the search index JSON
@@ -19,9 +19,14 @@
       .then(data => {
         // Initialize Lunr.js
         const idx = lunr(function () {
-          this.field('title')
+          this.ref('title')
           this.field('content')
-          this.ref('permalink')
+          
+          // Custom pipeline function to inspect tokens
+          this.pipeline.before(lunr.trimmer, function (token) {
+            console.log("Tokenizing:", token.toString());
+            return token;
+          });
 
           data.forEach(doc => {
             this.add(doc)
@@ -35,9 +40,10 @@
           const resultsContainer = document.getElementById('results')
           resultsContainer.innerHTML = ''
 
-          if (results.length > 0) {
+          if(this.value.trim() !== "") {
+            if (results.length > 0) {
             results.forEach(result => {
-              const item = data.find(doc => doc.permalink === result.ref)
+              const item = data.find(doc => doc.title === result.ref)
               const li = document.createElement('li')
               const a = document.createElement('a')
               a.href = item.permalink
@@ -47,6 +53,7 @@
             })
           } else {
             resultsContainer.innerHTML = '<li>No results found</li>'
+          }
           }
         })
       })
