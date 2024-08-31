@@ -1,43 +1,43 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>willjasen</title>
-        <link>/</link>
+        <link>//localhost:1313/</link>
         <description>transhumanist and high functioning loser; instantiated simulation, statically stuck in superposition, calculated computationally complex</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 18 Jan 2024 06:59:43 -0500</lastBuildDate>
-            <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Other Websites</title>
-    <link>/posts/other-websites/</link>
+    <link>//localhost:1313/posts/other-websites/</link>
     <pubDate>Thu, 18 Jan 2024 06:59:43 -0500</pubDate>
     <author>willjasen</author>
-    <guid>/posts/other-websites/</guid>
+    <guid>//localhost:1313/posts/other-websites/</guid>
     <description><![CDATA[Here&rsquo;s some other websites I&rsquo;ve made and manage!
 School Family My DNA Old website Uptime dashboard Nimbi rise to the challenge ]]></description>
 </item>
 <item>
     <title>On Being Gay</title>
-    <link>/posts/gay/</link>
+    <link>//localhost:1313/posts/gay/</link>
     <pubDate>Mon, 11 Oct 2021 19:06:19 -0400</pubDate>
     <author>willjasen</author>
-    <guid>/posts/gay/</guid>
+    <guid>//localhost:1313/posts/gay/</guid>
     <description><![CDATA[“The thing you need to know is, it’s all about sex.”
 These are the opening words in the US series premier of Queer as Folk, and yes, the first and last thing you should know is that it&rsquo;s all about sex. Being gay is a sexual predisposition - one in which lots of people find themselves attracted to the same sex.
 Modern society has traditionally shunned homosexuality, sometimes leading to situations which finds people imprisoned or where those who are persecuted end their lives.]]></description>
 </item>
 <item>
     <title>Family</title>
-    <link>/posts/family/</link>
+    <link>//localhost:1313/posts/family/</link>
     <pubDate>Wed, 28 Apr 2021 12:19:00 -0400</pubDate>
     <author>willjasen</author>
-    <guid>/posts/family/</guid>
+    <guid>//localhost:1313/posts/family/</guid>
     <description><![CDATA[https://family.willjasen.com]]></description>
 </item>
 <item>
     <title>Crypto Portfolio</title>
-    <link>/posts/crypto-portfolio/</link>
+    <link>//localhost:1313/posts/crypto-portfolio/</link>
     <pubDate>Sun, 18 Apr 2021 16:22:28 -0400</pubDate>
     <author>willjasen</author>
-    <guid>/posts/crypto-portfolio/</guid>
+    <guid>//localhost:1313/posts/crypto-portfolio/</guid>
     <description><![CDATA[View my crypto portfolio here!
 https://www.cointracker.io/portfolio/22b336f4-77d4-4085-9ff1-16dac5494939
 View my mining stats here!
@@ -45,10 +45,10 @@ https://www.f2pool.com/mining-user/fb3524b173c65643055e5b7316ce82fd]]></descript
 </item>
 <item>
     <title>Parched</title>
-    <link>/posts/parched/</link>
+    <link>//localhost:1313/posts/parched/</link>
     <pubDate>Sat, 16 Jan 2021 18:11:54 -0500</pubDate>
     <author>willjasen</author>
-    <guid>/posts/parched/</guid>
+    <guid>//localhost:1313/posts/parched/</guid>
     <description><![CDATA[This was originally published on Reddit to /r/AntiAntiJokes on November 23, 2019
 A parched man goes to a vending machine.
 “OUT OF ORDER”, the screen blinks after it hungrily eats his change.
@@ -57,30 +57,30 @@ The man, having attempted to obtain a rental movie, moves on to get a beverage. 
 </item>
 <item>
     <title>Rainstash</title>
-    <link>/posts/rainstash/</link>
+    <link>//localhost:1313/posts/rainstash/</link>
     <pubDate>Fri, 27 Nov 2020 17:50:15 -0500</pubDate>
     <author>willjasen</author>
-    <guid>/posts/rainstash/</guid>
+    <guid>//localhost:1313/posts/rainstash/</guid>
     <description><![CDATA[rainstash is an Amazon CloudFormation template for automating the setup of Resilio Sync in the Amazon cloud.
 rainstash and Amazon CloudFormation is completely free to use, however, Amazon may charge for the use of resources created with rainstash. rainstash uses the following cost-related services: EC2, S3, and data transfer.
 Due to technical and security considerations, rainstash by default only accepts encrypted read-only folder keys for the best security. That encrypted data itself resides on an encrypted virtual disk volume, but the instance is meant to be ephimeral.]]></description>
 </item>
 <item>
     <title>Information Entropy</title>
-    <link>/posts/entropy/</link>
+    <link>//localhost:1313/posts/entropy/</link>
     <pubDate>Fri, 27 Nov 2020 10:48:02 -0500</pubDate>
     <author>willjasen</author>
-    <guid>/posts/entropy/</guid>
+    <guid>//localhost:1313/posts/entropy/</guid>
     <description><![CDATA[This article was originally published on March 19, 2014
 After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
 We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased. Information entropy is a little different than physical entropy, though there are related aspects.]]></description>
 </item>
 <item>
     <title>Welcome!</title>
-    <link>/posts/welcome/</link>
+    <link>//localhost:1313/posts/welcome/</link>
     <pubDate>Sun, 22 Nov 2020 21:27:40 -0500</pubDate>
     <author>willjasen</author>
-    <guid>/posts/welcome/</guid>
+    <guid>//localhost:1313/posts/welcome/</guid>
     <description><![CDATA[My name is Brandon and this is my website!
 I chose the pseudonym &lsquo;willjasen&rsquo; way back in my sophomore year of high school as a stand-in for a stage name. At the time, I was practicing magic and sleight-of-hand and wanted a new, unique name to go by. My middle name is William, so the first name of &lsquo;will&rsquo; was easily chosen. As for the last name of &lsquo;jasen&rsquo;, I had recently seen a magician on TV named &ldquo;Jasen Magic&rdquo;, and something clicked for me and I put the two together - &lsquo;willjasen&rsquo; was then born.]]></description>
 </item>
