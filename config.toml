@@ -35,8 +35,8 @@ enableRobotsTXT = true
   images = ["/android-chrome-512x512.png"]
   [params.header]
     [params.header.title]
-      name = ""
-      logo = ""
+      name = "the webz"
+      logo = "/profile_pic.jpg"
   [params.footer]
     copyright = false
     author = false
