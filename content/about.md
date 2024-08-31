@@ -5,3 +5,5 @@ draft: false
 ---
 
 This is me!
+
+![Me](/android-chrome-512x512.png)
