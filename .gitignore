@@ -1,9 +1,4 @@
 
-.DS_Store
-public/.DS_Store
-public/.DS_Store
-resources/.DS_Store
-themes/.DS_Store
-public/.DS_Store
+**/.DS_Store
+
 .hugo_build.lock
-themes/.DS_Store
