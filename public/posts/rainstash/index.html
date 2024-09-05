@@ -9,7 +9,7 @@
   <meta property="og:title" content="Rainstash">
   <meta property="og:description" content="rainstash is an Amazon CloudFormation template for automating the setup of Resilio Sync in the Amazon cloud.
 rainstash and Amazon CloudFormation is completely free to use, however, Amazon may charge for the use of resources created with rainstash. rainstash uses the following cost-related services: EC2, S3, and data transfer.
-Due to technical and security considerations, rainstash by default only accepts encrypted read-only folder keys for the best security. That encrypted data itself resides on an encrypted virtual disk volume, but the instance is meant to be ephimeral.">
+Due to technical and security considerations, rainstash by default only accepts encrypted read-only folder keys for the best security. That encrypted data itself resides on an encrypted virtual disk volume, but the instance is meant to be ephimeral. If the EC2 instance where rainstash is running is shutdown or rebooted, data on that instance is not trivially recoverable. The workaround - the BitTorrent protocol and Resilio Sync are meant to be decentralized and distributed. Always have more than one copy of your folders, whether it’s multiple rainstash stacks or running on your own hardware. Please keep this in mind!">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -22,7 +22,7 @@ Due to technical and security considerations, rainstash by default only accepts 
   <meta name="twitter:title" content="Rainstash">
   <meta name="twitter:description" content="rainstash is an Amazon CloudFormation template for automating the setup of Resilio Sync in the Amazon cloud.
 rainstash and Amazon CloudFormation is completely free to use, however, Amazon may charge for the use of resources created with rainstash. rainstash uses the following cost-related services: EC2, S3, and data transfer.
-Due to technical and security considerations, rainstash by default only accepts encrypted read-only folder keys for the best security. That encrypted data itself resides on an encrypted virtual disk volume, but the instance is meant to be ephimeral.">
+Due to technical and security considerations, rainstash by default only accepts encrypted read-only folder keys for the best security. That encrypted data itself resides on an encrypted virtual disk volume, but the instance is meant to be ephimeral. If the EC2 instance where rainstash is running is shutdown or rebooted, data on that instance is not trivially recoverable. The workaround - the BitTorrent protocol and Resilio Sync are meant to be decentralized and distributed. Always have more than one copy of your folders, whether it’s multiple rainstash stacks or running on your own hardware. Please keep this in mind!">
       <meta name="twitter:site" content="@willjasen">
 <meta name="application-name" content="willjasen">
 <meta name="apple-mobile-web-app-title" content="willjasen"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
@@ -132,7 +132,7 @@ Due to technical and security considerations, rainstash by default only accepts 
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.131.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.134.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="../../posts/welcome" target="_blank">willjasen</a></span></div>
         </div>
     </footer></div>

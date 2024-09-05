@@ -9,8 +9,16 @@
     <pubDate>Thu, 18 Jan 2024 06:59:43 -0500</pubDate>
     <author>willjasen</author>
     <guid>//localhost:1313/posts/other-websites/</guid>
-    <description><![CDATA[Here&rsquo;s some other websites I&rsquo;ve made and manage! I use an uptime dashboard to keep track of them being online.
-school &ndash; digital files from high school and college family - a family tree my dna - a&rsquo;s, c&rsquo;s, g&rsquo;s, &amp; t&rsquo;s old website - the first website that i ever had nimbi - a cloudly vision rise to the challenge - learn how to take your company to the next level codename: wallace-thrasher - i got a package for ya ]]></description>
+    <description><![CDATA[<p>Here&rsquo;s some other websites I&rsquo;ve made and manage! I use an <a href="https://uptime.willjasen.com" target="_blank" rel="noopener noreffer ">uptime dashboard</a> to keep track of them being online.</p>
+<ul>
+<li><a href="https://school.willjasen.com" target="_blank" rel="noopener noreffer ">school</a> &ndash; digital files from high school and college</li>
+<li><a href="https://family.willjasen.com" target="_blank" rel="noopener noreffer ">family</a> - a family tree</li>
+<li><a href="https://dna.willjasen.com" target="_blank" rel="noopener noreffer ">my dna</a> - a&rsquo;s, c&rsquo;s, g&rsquo;s, &amp; t&rsquo;s</li>
+<li><a href="https://old.willjasen.com" target="_blank" rel="noopener noreffer ">old website</a> - the first website that i ever had</li>
+<li><a href="https://nimbi.it" target="_blank" rel="noopener noreffer ">nimbi</a> - a cloudly vision</li>
+<li><a href="https://levitating.ceo" target="_blank" rel="noopener noreffer ">rise to the challenge</a> - learn how to take your company to the next level</li>
+<li><a href="https://stretchie.delivery" target="_blank" rel="noopener noreffer ">codename: wallace-thrasher</a> - i got a package for ya</li>
+</ul>]]></description>
 </item>
 <item>
     <title>On Being Gay</title>
@@ -18,9 +26,9 @@ school &ndash; digital files from high school and college family - a family tree
     <pubDate>Mon, 11 Oct 2021 19:06:19 -0400</pubDate>
     <author>willjasen</author>
     <guid>//localhost:1313/posts/gay/</guid>
-    <description><![CDATA[“The thing you need to know is, it’s all about sex.”
-These are the opening words in the US series premier of Queer as Folk, and yes, the first and last thing you should know is that it&rsquo;s all about sex. Being gay is a sexual predisposition - one in which lots of people find themselves attracted to the same sex.
-Modern society has traditionally shunned homosexuality, sometimes leading to situations which finds people imprisoned or where those who are persecuted end their lives.]]></description>
+    <description><![CDATA[<p>“The thing you need to know is, it’s all about sex.”</p>
+<p>These are the opening words in the US series premier of Queer as Folk, and yes, the first and last thing you should know is that it&rsquo;s all about sex. Being gay is a sexual predisposition - one in which lots of people find themselves attracted to the same sex.</p>
+<p>Modern society has traditionally shunned homosexuality, sometimes leading to situations which finds people imprisoned or where those who are persecuted end their lives. Such a prime example would be that of Alan Turing, the mastermind of modern computing. Turing devoted his life to creating machines to crack Axis codes during the war, and it was such ended by his own hands after the British government forced him to repress who he was by forcing chemical castration upon him.</p>]]></description>
 </item>
 <item>
     <title>Family</title>
@@ -28,7 +36,9 @@ Modern society has traditionally shunned homosexuality, sometimes leading to sit
     <pubDate>Wed, 28 Apr 2021 12:19:00 -0400</pubDate>
     <author>willjasen</author>
     <guid>//localhost:1313/posts/family/</guid>
-    <description><![CDATA[https://family.willjasen.com]]></description>
+    <description><![CDATA[<p><a href="https://family.willjasen.com" target="_blank" rel="noopener noreffer ">https://family.willjasen.com</a></p>
+<iframe style="width:810px;height:700px;" marginwidth="0" marginheight="0" scrolling="yes" frameborder="0" src="https://family.willjasen.com">
+</iframe>]]></description>
 </item>
 <item>
     <title>Parched</title>
@@ -36,11 +46,11 @@ Modern society has traditionally shunned homosexuality, sometimes leading to sit
     <pubDate>Sat, 16 Jan 2021 18:11:54 -0500</pubDate>
     <author>willjasen</author>
     <guid>//localhost:1313/posts/parched/</guid>
-    <description><![CDATA[This was originally published on Reddit to /r/AntiAntiJokes on November 23, 2019
-A parched man goes to a vending machine.
-“OUT OF ORDER”, the screen blinks after it hungrily eats his change.
-That’s when he realized - all of his change was gone.
-The man, having attempted to obtain a rental movie, moves on to get a beverage. He finds a local bar, but as soon as he steps up to the bar to order, he realizes yet again that his change was gone.]]></description>
+    <description><![CDATA[<p><em>This was originally published on Reddit to /r/AntiAntiJokes on November 23, 2019</em></p>
+<p>A parched man goes to a vending machine.</p>
+<p>“OUT OF ORDER”, the screen blinks after it hungrily eats his change.</p>
+<p>That’s when he realized - all of his change was gone.</p>
+<p>The man, having attempted to obtain a rental movie, moves on to get a beverage. He finds a local bar, but as soon as he steps up to the bar to order, he realizes yet again that his change was gone. The floor of the bar splits with a thunderous crack as everything viciously dissolves away.</p>]]></description>
 </item>
 <item>
     <title>Rainstash</title>
@@ -48,9 +58,9 @@ The man, having attempted to obtain a rental movie, moves on to get a beverage. 
     <pubDate>Fri, 27 Nov 2020 17:50:15 -0500</pubDate>
     <author>willjasen</author>
     <guid>//localhost:1313/posts/rainstash/</guid>
-    <description><![CDATA[rainstash is an Amazon CloudFormation template for automating the setup of Resilio Sync in the Amazon cloud.
-rainstash and Amazon CloudFormation is completely free to use, however, Amazon may charge for the use of resources created with rainstash. rainstash uses the following cost-related services: EC2, S3, and data transfer.
-Due to technical and security considerations, rainstash by default only accepts encrypted read-only folder keys for the best security. That encrypted data itself resides on an encrypted virtual disk volume, but the instance is meant to be ephimeral.]]></description>
+    <description><![CDATA[<p>rainstash is an Amazon CloudFormation template for automating the setup of Resilio Sync in the Amazon cloud.</p>
+<p>rainstash and Amazon CloudFormation is completely free to use, however, Amazon may charge for the use of resources created with rainstash. rainstash uses the following cost-related services: EC2, S3, and data transfer.</p>
+<p>Due to technical and security considerations, rainstash by default only accepts encrypted read-only folder keys for the best security. That encrypted data itself resides on an encrypted virtual disk volume, but the instance is meant to be ephimeral. If the EC2 instance where rainstash is running is shutdown or rebooted, data on that instance is not trivially recoverable. The workaround - the BitTorrent protocol and Resilio Sync are meant to be decentralized and distributed. Always have more than one copy of your folders, whether it&rsquo;s multiple rainstash stacks or running on your own hardware. Please keep this in mind!</p>]]></description>
 </item>
 <item>
     <title>Information Entropy</title>
@@ -58,14 +68,25 @@ Due to technical and security considerations, rainstash by default only accepts 
     <pubDate>Fri, 27 Nov 2020 10:48:02 -0500</pubDate>
     <author>willjasen</author>
     <guid>//localhost:1313/posts/entropy/</guid>
-    <description><![CDATA[Here is an inline math expression: (a^2 + b^2 = c^2).
-The following
-$$\int_{a}^{b} x^2 dx$$
-Is an integral
-Integrate $$\int x^3 dx$$
-This article was originally published on March 19, 2014
-After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).
-We usually hear about entropy in regards to physics, in which it describes how random a physical system is.]]></description>
+    <description><![CDATA[<link rel="stylesheet" 
+	  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+	  integrity="sha512-mQwom8Ns4op+H29oDkD/LXO/OsXPvCFfkgZkFAVrhhePzRLU8NUI3Nkm43NhWUSmj3p5Cca2HTEkMQmXQRwDQQ=="
+	  crossorigin="anonymous"
+>
+<script defer 
+		src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+		integrity="sha512-sHSNLECRJSK+BFs7E8DiFc6pf6n90bLI85Emiw1jhreduZhK3VXgq9l4kAt9eTIHYAcuQBKHL01QKs4/3Xgl8g=="
+		crossorigin="anonymous"
+></script>
+<script defer 
+		src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+		integrity="sha512-iWiuBS5nt6r60fCz26Nd0Zqe0nbk1ZTIQbl3Kv7kYsX+yKMUFHzjaH2+AnM6vp2Xs+gNmaBAVWJjSmuPw76Efg=="
+		crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"
+></script>
+
+<p><em>This article was originally published on March 19, 2014 in correspondence with a talk I gave</em></p>
+<p></p>]]></description>
 </item>
 <item>
     <title>Welcome!</title>
@@ -73,8 +94,8 @@ We usually hear about entropy in regards to physics, in which it describes how r
     <pubDate>Sun, 22 Nov 2020 21:27:40 -0500</pubDate>
     <author>willjasen</author>
     <guid>//localhost:1313/posts/welcome/</guid>
-    <description><![CDATA[My name is Brandon and this is my website!
-I chose the pseudonym &lsquo;willjasen&rsquo; way back in my sophomore year of high school as a stand-in for a stage name. At the time, I was practicing magic and sleight-of-hand and wanted a new, unique name to go by. My middle name is William, so the first name of &lsquo;will&rsquo; was easily chosen. As for the last name of &lsquo;jasen&rsquo;, I had recently seen a magician on TV named &ldquo;Jasen Magic&rdquo;, and something clicked for me and I put the two together - &lsquo;willjasen&rsquo; was then born.]]></description>
+    <description><![CDATA[<p>My name is Brandon and this is my website!</p>
+<p>I chose the pseudonym &lsquo;willjasen&rsquo; way back in my sophomore year of high school as a stand-in for a stage name. At the time, I was practicing magic and sleight-of-hand and wanted a new, unique name to go by. My middle name is William, so the first name of &lsquo;will&rsquo; was easily chosen. As for the last name of &lsquo;jasen&rsquo;, I had recently seen a magician on TV named &ldquo;Jasen Magic&rdquo;, and something clicked for me and I put the two together - &lsquo;willjasen&rsquo; was then born. I always like to note that the moniker must be in lowercase and squished together - it&rsquo;s not a proper name!</p>]]></description>
 </item>
 </channel>
 </rss>
