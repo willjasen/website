@@ -15,6 +15,7 @@ draft: false
 ### Components
 
 - [Tailscale](https://tailscale.com/) - a mesh VPN framework
+- [Tipi](https://runtipi.io/) - a containerized application management interface
 - [Syncthing](https://syncthing.net/) - a folder replication application
 - [Uptime Kuma](https://uptime.kuma.pet/) - a monitoring service for other services
 

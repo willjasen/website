@@ -20,6 +20,7 @@
 <h3 id="components">Components</h3>
 <ul>
 <li><a href="https://tailscale.com/" target="_blank" rel="noopener noreffer ">Tailscale</a> - a mesh VPN framework</li>
+<li><a href="https://runtipi.io/" target="_blank" rel="noopener noreffer ">Tipi</a> - a containerized application management interface</li>
 <li><a href="https://syncthing.net/" target="_blank" rel="noopener noreffer ">Syncthing</a> - a folder replication application</li>
 <li><a href="https://uptime.kuma.pet/" target="_blank" rel="noopener noreffer ">Uptime Kuma</a> - a monitoring service for other services</li>
 </ul>
