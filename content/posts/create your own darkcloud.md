@@ -14,11 +14,11 @@ draft: false
 
 ### Components
 
-- Tailscale - a mesh VPN framework
-- Syncthing - a folder replication application
-- Uptime Kuma - a monitoring service for other services
+- [Tailscale](https://tailscale.com/) - a mesh VPN framework
+- [Syncthing](https://syncthing.net/) - a folder replication application
+- [Uptime Kuma](https://uptime.kuma.pet/) - a monitoring service for other services
 
-### [Tailscale](https://tailscale.com/)
+### Tailscale
 
 - start with almost any kind of computer; for example, I have some Lenovo M600 Tiny PCs and virtual machines, but even something like a Raspberry Pi can be used
 - Install Linux; I use Ubuntu but most flavors of Linux should work fine; of course if you're using a Pi, you'll be using Raspbian OS
@@ -29,7 +29,7 @@ draft: false
 - Tailscale uses what's termed as the CG-NAT space within IP addressing which is the subnet of 100.64.0.0/10 (the range of 100.64.0.0 to 100.127.255.255); this range is not publicly routable on the Internet
 - You'll also want to turn on [MagicDNS](https://tailscale.com/kb/1081/magicdns) within Tailscale as this helps to remember names of devices instead of an IP address; when setting up, you'll essentially roll two random words that will be used for your MagicDNS so roll until you find something memorable or funny! Mine is "risk-mermaid" (MagicDNS names aren't private and don't need to be; in fact, if you use the Tailscale certs feature, the certificates details are published to a public ledger, however only devices within your tailnet will be able to resolve from this domain into an IP address)
 
-### [Tipi](https://runtipi.io/)
+### Tipi
 
 - Install Tipi on your host from runtipi.io by running:
   `curl -L https://setup.runtipi.io | bash`
@@ -41,10 +41,10 @@ draft: false
 - Once Syncthing has installed from the Tipi app store, click the button to view its link; Syncthing uses port 8090 within Tipi for reference; these ports are assigned when apps get added to the Tipi app store and should be the same across Tipi installs
 - Now it doesn't suffice to only have Tailscale on your host, so now you'll want to install it on your other devices as well, then access your newly deployed Syncthing app via Tipi via the MagicDNS link (along with the port of course)
   - Example: "monitoring.yak-bebop.ts.net:8090"
-  ![Pasted image 20240130124401.png](/posts/darkcloud/f257b0cee848fdce77be199da6774e8c7299d914.png)
+  ![Tailscale machine vs. tailnet names](/posts/darkcloud/f257b0cee848fdce77be199da6774e8c7299d914.png)
 - If all goes well, the main webpage of that Syncthing instance should load
 
-### [Syncthing](https://syncthing.net/)
+### Syncthing
 
 - When you first access Syncthing, you should be presented with a banner near the top of the page warning about there not being credentials for the app, you'll want to go into its settings and setup a username/password for its webpage GUI![Screenshot 2024-01-30 at 12.57.03 PM 1.png](/posts/darkcloud/07efea6349436e6f85fdde2fa6644214ec3eb72f.png)
 - Now for Syncthing to have something to sync, you'll want to set it up on another device; for example, I have it on my MacBook Pro; grab the Syncthing device ID from the Tipi instance (Actions --\> Show ID) and use it to add a remote device from your workstation; go back to the Tipi instance to accept the new device; now you have two devices ready to sync data between them
@@ -56,7 +56,7 @@ draft: false
 ![Screenshot 2024-01-30 at 1.00.26 PM.png](/posts/darkcloud/1.png)
 - Because this is the source folder that we want to replicate, send/receive is selected so that; choosing receive only as the folder type means that the device will stay in sync with other devices but any changes locally on the device aren't replicated out to others, useful to maintain a copy of data where changes to that data on the device aren't expected
 
-### [Uptime Kuma](https://uptime.kuma.pet/)
+### Uptime Kuma
 
 - Now that you have your first darkcloud service, you're gonna want to monitor it - Uptime Kuma does just that!
 - Install Uptime Kuma from the Tipi app store, then navigate to its link (its port should be 8125); of course, you'll want to put a username/password on it

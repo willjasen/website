@@ -95,11 +95,11 @@
 </ul>
 <h3 id="components">Components</h3>
 <ul>
-<li>Tailscale - a mesh VPN framework</li>
-<li>Syncthing - a folder replication application</li>
-<li>Uptime Kuma - a monitoring service for other services</li>
+<li><a href="https://tailscale.com/" target="_blank" rel="noopener noreffer ">Tailscale</a> - a mesh VPN framework</li>
+<li><a href="https://syncthing.net/" target="_blank" rel="noopener noreffer ">Syncthing</a> - a folder replication application</li>
+<li><a href="https://uptime.kuma.pet/" target="_blank" rel="noopener noreffer ">Uptime Kuma</a> - a monitoring service for other services</li>
 </ul>
-<h3 id="tailscalehttpstailscalecom"><a href="https://tailscale.com/" target="_blank" rel="noopener noreffer ">Tailscale</a></h3>
+<h3 id="tailscale">Tailscale</h3>
 <ul>
 <li>start with almost any kind of computer; for example, I have some Lenovo M600 Tiny PCs and virtual machines, but even something like a Raspberry Pi can be used</li>
 <li>Install Linux; I use Ubuntu but most flavors of Linux should work fine; of course if you&rsquo;re using a Pi, you&rsquo;ll be using Raspbian OS</li>
@@ -113,7 +113,7 @@
 <li>Tailscale uses what&rsquo;s termed as the CG-NAT space within IP addressing which is the subnet of 100.64.0.0/10 (the range of 100.64.0.0 to 100.127.255.255); this range is not publicly routable on the Internet</li>
 <li>You&rsquo;ll also want to turn on <a href="https://tailscale.com/kb/1081/magicdns" target="_blank" rel="noopener noreffer ">MagicDNS</a> within Tailscale as this helps to remember names of devices instead of an IP address; when setting up, you&rsquo;ll essentially roll two random words that will be used for your MagicDNS so roll until you find something memorable or funny! Mine is &ldquo;risk-mermaid&rdquo; (MagicDNS names aren&rsquo;t private and don&rsquo;t need to be; in fact, if you use the Tailscale certs feature, the certificates details are published to a public ledger, however only devices within your tailnet will be able to resolve from this domain into an IP address)</li>
 </ul>
-<h3 id="tipihttpsruntipiio"><a href="https://runtipi.io/" target="_blank" rel="noopener noreffer ">Tipi</a></h3>
+<h3 id="tipi">Tipi</h3>
 <ul>
 <li>Install Tipi on your host from runtipi.io by running:
 <code>curl -L https://setup.runtipi.io | bash</code></li>
@@ -133,12 +133,12 @@
         data-srcset="./posts/darkcloud/f257b0cee848fdce77be199da6774e8c7299d914.png, ./posts/darkcloud/f257b0cee848fdce77be199da6774e8c7299d914.png 1.5x, ./posts/darkcloud/f257b0cee848fdce77be199da6774e8c7299d914.png 2x"
         data-sizes="auto"
         alt="/posts/darkcloud/f257b0cee848fdce77be199da6774e8c7299d914.png"
-        title="Pasted image 20240130124401.png" /></li>
+        title="Tailscale machine vs. tailnet names" /></li>
 </ul>
 </li>
 <li>If all goes well, the main webpage of that Syncthing instance should load</li>
 </ul>
-<h3 id="syncthinghttpssyncthingnet"><a href="https://syncthing.net/" target="_blank" rel="noopener noreffer ">Syncthing</a></h3>
+<h3 id="syncthing">Syncthing</h3>
 <ul>
 <li>When you first access Syncthing, you should be presented with a banner near the top of the page warning about there not being credentials for the app, you&rsquo;ll want to go into its settings and setup a username/password for its webpage GUI<img
         class="lazyload"
@@ -178,7 +178,7 @@
         title="Screenshot 2024-01-30 at 1.00.26 PM.png" /></li>
 <li>Because this is the source folder that we want to replicate, send/receive is selected so that; choosing receive only as the folder type means that the device will stay in sync with other devices but any changes locally on the device aren&rsquo;t replicated out to others, useful to maintain a copy of data where changes to that data on the device aren&rsquo;t expected</li>
 </ul>
-<h3 id="uptime-kumahttpsuptimekumapet"><a href="https://uptime.kuma.pet/" target="_blank" rel="noopener noreffer ">Uptime Kuma</a></h3>
+<h3 id="uptime-kuma">Uptime Kuma</h3>
 <ul>
 <li>Now that you have your first darkcloud service, you&rsquo;re gonna want to monitor it - Uptime Kuma does just that!</li>
 <li>Install Uptime Kuma from the Tipi app store, then navigate to its link (its port should be 8125); of course, you&rsquo;ll want to put a username/password on it</li>
