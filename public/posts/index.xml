@@ -102,7 +102,7 @@
 </code></pre>]]></description>
 </item>
 <item>
-    <title>Other Websites</title>
+    <title>other websites</title>
     <link>/posts/other-websites/</link>
     <pubDate>Thu, 18 Jan 2024 06:59:43 -0500</pubDate>
     <author>willjasen</author>
@@ -119,7 +119,7 @@
 </ul>]]></description>
 </item>
 <item>
-    <title>On Being Gay</title>
+    <title>on being gay</title>
     <link>/posts/gay/</link>
     <pubDate>Mon, 11 Oct 2021 19:06:19 -0400</pubDate>
     <author>willjasen</author>
@@ -129,7 +129,7 @@
 <p>Modern society has traditionally shunned homosexuality, sometimes leading to situations which finds people imprisoned or where those who are persecuted end their lives. Such a prime example would be that of Alan Turing, the mastermind of modern computing. Turing devoted his life to creating machines to crack Axis codes during the war, and it was such ended by his own hands after the British government forced him to repress who he was by forcing chemical castration upon him.</p>]]></description>
 </item>
 <item>
-    <title>Family</title>
+    <title>family</title>
     <link>/posts/family/</link>
     <pubDate>Wed, 28 Apr 2021 12:19:00 -0400</pubDate>
     <author>willjasen</author>
@@ -138,7 +138,7 @@
 <!-- raw HTML omitted -->]]></description>
 </item>
 <item>
-    <title>Parched</title>
+    <title>parched</title>
     <link>/posts/parched/</link>
     <pubDate>Sat, 16 Jan 2021 18:11:54 -0500</pubDate>
     <author>willjasen</author>
@@ -150,7 +150,7 @@
 <p>The man, having attempted to obtain a rental movie, moves on to get a beverage. He finds a local bar, but as soon as he steps up to the bar to order, he realizes yet again that his change was gone. The floor of the bar splits with a thunderous crack as everything viciously dissolves away.</p>]]></description>
 </item>
 <item>
-    <title>Rainstash</title>
+    <title>rainstash</title>
     <link>/posts/rainstash/</link>
     <pubDate>Fri, 27 Nov 2020 17:50:15 -0500</pubDate>
     <author>willjasen</author>
@@ -160,7 +160,7 @@
 <p>Due to technical and security considerations, rainstash by default only accepts encrypted read-only folder keys for the best security. That encrypted data itself resides on an encrypted virtual disk volume, but the instance is meant to be ephimeral. If the EC2 instance where rainstash is running is shutdown or rebooted, data on that instance is not trivially recoverable. The workaround - the BitTorrent protocol and Resilio Sync are meant to be decentralized and distributed. Always have more than one copy of your folders, whether it&rsquo;s multiple rainstash stacks or running on your own hardware. Please keep this in mind!</p>]]></description>
 </item>
 <item>
-    <title>Information Entropy</title>
+    <title>information entropy</title>
     <link>/posts/entropy/</link>
     <pubDate>Fri, 27 Nov 2020 10:48:02 -0500</pubDate>
     <author>willjasen</author>
@@ -188,7 +188,7 @@
 <p>We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased. Information entropy is a little different than physical entropy, though there are related aspects. Information entropy describes how random the information is, though its entropy does not naturally increase over time. Information entropy was first described by Claude Shannon in 1948.</p>]]></description>
 </item>
 <item>
-    <title>Welcome!</title>
+    <title>welcome!</title>
     <link>/posts/welcome/</link>
     <pubDate>Sun, 22 Nov 2020 21:27:40 -0500</pubDate>
     <author>willjasen</author>

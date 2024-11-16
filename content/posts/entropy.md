@@ -1,5 +1,5 @@
 ---
-title: "Information Entropy"
+title: "information entropy"
 date: 2020-11-27T10:48:02-05:00
 draft: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: "On Being Gay"
+title: "on being gay"
 date: 2021-10-11T19:06:19-04:00
 draft: false
 ---
