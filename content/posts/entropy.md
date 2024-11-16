@@ -22,14 +22,25 @@ where p(x) is the probability of a particular byte and n is the probability spac
 
 Let’s simplify: what’s the entropy of a fair coin toss? This is calculated as:
 
-![Fair Coin Toss](/posts/fair_coin_toss.png)
+$$ p(x(heads)) = 50\\% = 0.5, p(x(tails)) = 50\\% = 0.5$$
+$$  $$
+$$ -[ p(x(heads))] \log_2 p(x(heads)) + p(x(tails))] \log_2 p(x(tails)) ] $$
+$$ -[ (0.5) \log_2 0.5 + (0.5) \log_2 0.5 ] $$
+$$ -[ -0.5 + -0.5 ] $$
+$$ -[-1] $$
+$$ 1 $$
 
 So the answer is 1. What does this mean? In full terms, it means that the amount of information retrieved from a fair coin flip is 1 bit of information per 1 bit of information, and this measurement verifies that the coin’s probability of outcomes is indeed fair. The coin is as random as it can be -  there isn’t anything more random than 50/50 with a coin flip.
 
 Let’s decrease the randomness of a coin flip by making the coin unfair by increasing the chance of heads to 75%:
 
-
-![Unfair Coin Toss](/posts/unfair_coin_toss.png)
+$$ p(x(heads)) = 75\\% = 0.75, p(x(tails)) = 25\\% = 0.25$$
+$$  $$
+$$ -[ p(x(heads))] \log_2 p(x(heads)) + p(x(tails))] \log_2 p(x(tails)) ] $$
+$$ -[ (0.75) \log_2 0.75 + (0.25) \log_2 0.25 ] $$
+$$ -[ \approx -0.311 + -0.5 ] $$
+$$ -[ \approx -0.811 ] $$
+$$ [ \approx 0.811 $$
 
 The entropy for this unfair coin toss is around 0.811, meaning that the amount of information retrieved from this unfair coin is around 0.811 bits of information per 1 bit of information. If the probability of heads in increased to 90%, that unfair coin has an even lower entropy than 0.811 bits per bit. Following this trend, as information becomes less random, its entropy becomes smaller relative to the amount of bits per unit of information. A coin with heads on both sides always lands heads and its entropy is exactly zero, meaning that no useful information is conveyed with this kind of coin flip.
 

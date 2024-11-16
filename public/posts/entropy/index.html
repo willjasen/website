@@ -38,7 +38,7 @@ We usually hear about entropy in regards to physics, in which it describes how r
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/entropy\/"
-        },"image": ["\/profile_pic.jpg"],"genre": "posts","wordcount":  648 ,
+        },"image": ["\/profile_pic.jpg"],"genre": "posts","wordcount":  750 ,
         "url": "\/posts\/entropy\/","datePublished": "2020-11-27T10:48:02-05:00","dateModified": "2020-11-27T10:48:02-05:00","publisher": {
             "@type": "Organization",
             "name": "willjasen","logo": "\/profile_pic.jpg"},"author": {
@@ -94,7 +94,7 @@ We usually hear about entropy in regards to physics, in which it describes how r
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">information entropy</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="../../posts/welcome" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>willjasen</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2020-11-27">2020-11-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;648 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2020-11-27">2020-11-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;750 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -134,24 +134,22 @@ We usually hear about entropy in regards to physics, in which it describes how r
 <p>$$ H(X) = -\sum_{i=1}^{n} p(x_i) \log_2 p(x_i) $$</p>
 <p>where p(x) is the probability of a particular byte and n is the probability space. In the case of computer data, the maximum probability space is n = 256 because there are 256 possible bytes - 0x00 to 0xFF in hex. In practical applications, n can be smaller if a particular byte is not present within the information being calculated.</p>
 <p>Let’s simplify: what’s the entropy of a fair coin toss? This is calculated as:</p>
-<p><img
-        class="lazyload"
-        src="../../svg/loading.min.svg"
-        data-src="../../posts/fair_coin_toss.png"
-        data-srcset="../../posts/fair_coin_toss.png, ../../posts/fair_coin_toss.png 1.5x, ../../posts/fair_coin_toss.png 2x"
-        data-sizes="auto"
-        alt="/posts/fair_coin_toss.png"
-        title="Fair Coin Toss" /></p>
+<p>$$ p(x(heads)) = 50\% = 0.5, p(x(tails)) = 50\% = 0.5$$
+$$  $$
+$$ -[ p(x(heads))] \log_2 p(x(heads)) + p(x(tails))] \log_2 p(x(tails)) ] $$
+$$ -[ (0.5) \log_2 0.5 + (0.5) \log_2 0.5 ] $$
+$$ -[ -0.5 + -0.5 ] $$
+$$ -[-1] $$
+$$ 1 $$</p>
 <p>So the answer is 1. What does this mean? In full terms, it means that the amount of information retrieved from a fair coin flip is 1 bit of information per 1 bit of information, and this measurement verifies that the coin’s probability of outcomes is indeed fair. The coin is as random as it can be -  there isn’t anything more random than 50/50 with a coin flip.</p>
 <p>Let’s decrease the randomness of a coin flip by making the coin unfair by increasing the chance of heads to 75%:</p>
-<p><img
-        class="lazyload"
-        src="../../svg/loading.min.svg"
-        data-src="../../posts/unfair_coin_toss.png"
-        data-srcset="../../posts/unfair_coin_toss.png, ../../posts/unfair_coin_toss.png 1.5x, ../../posts/unfair_coin_toss.png 2x"
-        data-sizes="auto"
-        alt="/posts/unfair_coin_toss.png"
-        title="Unfair Coin Toss" /></p>
+<p>$$ p(x(heads)) = 75\% = 0.75, p(x(tails)) = 25\% = 0.25$$
+$$  $$
+$$ -[ p(x(heads))] \log_2 p(x(heads)) + p(x(tails))] \log_2 p(x(tails)) ] $$
+$$ -[ (0.75) \log_2 0.75 + (0.25) \log_2 0.25 ] $$
+$$ -[ \approx -0.311 + -0.5 ] $$
+$$ -[ \approx -0.811 ] $$
+$$ [ \approx 0.811 $$</p>
 <p>The entropy for this unfair coin toss is around 0.811, meaning that the amount of information retrieved from this unfair coin is around 0.811 bits of information per 1 bit of information. If the probability of heads in increased to 90%, that unfair coin has an even lower entropy than 0.811 bits per bit. Following this trend, as information becomes less random, its entropy becomes smaller relative to the amount of bits per unit of information. A coin with heads on both sides always lands heads and its entropy is exactly zero, meaning that no useful information is conveyed with this kind of coin flip.</p>
 <p>So calculating the entropy of a fair and unfair coin is interesting, but what practical uses does entropy have, you say? Cryptography algorithms increase entropy of unencrypted data by obscuring it such that without a decryption key, the encrypted information appears more random than the unencrypted information. Compression algorithms decrease the entropy of a file by removing redundant, less random data to lower the file’s size. In fact, from a computational complexity perspective, the amount of entropy of uncompressed data details the mathematical lower bound, which is the best any compression algorithm could ever hope to achieve. In computer and network security, high entropy data may indicate a malicious program trying to mask itself through encryption or obsufcation and low entropy data may indicate a non-compliance of an applied encryption security program, though each scenario depends on the environment and how its used.</p>
 <p>To calculate the entropy of a file, it must be read byte by byte. Each occurrence of a byte is added to a frequency array to keep track of how often a byte occurs. After the entire file is read, the frequency array is used to calculate the file’s entropy by summing each byte’s possibility multiplied by the logarithm of its possibility, and then the result is multiplied by negative one - Shannon’s entropy equation.</p>
