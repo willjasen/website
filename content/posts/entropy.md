@@ -1,7 +1,8 @@
 ---
-title: "information entropy"
-date: 2020-11-27T10:48:02-05:00
-draft: false
+title:      "information entropy"
+date:       2020-11-27T10:48:02-05:00
+lastmod:    2025-01-22T14:42:00-05:00
+draft:      false
 ---
 
 {{< katex >}}
