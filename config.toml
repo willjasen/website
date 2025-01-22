@@ -1,15 +1,11 @@
 baseURL = "/"
-languageCode = "en-us"
 title = "willjasen"
-theme = "LoveIt"
+theme = "DoIt"
 relativeURLS=true
 googleAnalytics = "G-H5JWMTWEHQ"
 enableRobotsTXT = true
-
-[author]
-  name = "willjasen"
-  email = ""
-  link = "/posts/welcome"
+languageCode = "en-us"
+summaryLength = 0
 
 [menu]
   [[menu.main]]
@@ -41,6 +37,12 @@ enableRobotsTXT = true
   title = "willjasen"
   description = "transhumanist and high functioning loser; instantiated simulation, statically stuck in superposition, calculated computationally complex, technomancer at will"
   images = ["/android-chrome-512x512.png"]
+
+  [params.author]
+    name = "willjasen"
+    email = ""
+    link = "/posts/welcome"
+
   [params.header]
     [params.header.title]
       name = "the webz"
@@ -58,7 +60,7 @@ enableRobotsTXT = true
       social = true
     [params.home.posts]
         enable = true
-        paginate = 10
+        paginate = 5
 
   [params.verification]
 
@@ -67,7 +69,8 @@ enableRobotsTXT = true
     thumbnailUrl = "/profile_pic.jpg"
 
   [params.analytics]
-  enable = true
+    enable = true
+    
     [params.analytics.google]
       id = "G-H5JWMTWEHQ"
       anonymizeIP = true
@@ -130,4 +133,4 @@ enableRobotsTXT = true
           Mix = false
 
 [outputs]
-  home = ["HTML", "JSON"]
+  home = ["HTML", "JSON", "RSS"]
