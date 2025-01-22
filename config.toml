@@ -14,7 +14,7 @@ summaryLength = 0
       pre = ""
       post = ""
       name = "about"
-      url = "/posts/welcome/"
+      url = "/about/"
       title = ""
   [[menu.main]]
       weight = 2

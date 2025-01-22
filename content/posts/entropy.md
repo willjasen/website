@@ -74,7 +74,7 @@ for(int i=0;i<frequency_array.length;i++) {
 entropy *= -1;
 ```
 
-To see entire source code in Java that calculates the entropy of a file at a given file path, take a look at https://github.com/willjasen/entropy
+To see entire source code in Java that calculates the entropy of a file at a given file path, take a look at https://github.com/willjasen/entropy - ![GitHub last commit](https://img.shields.io/github/last-commit/willjasen/entropy)
 
 As a neat side note, the digital forensics tool [The Sleuth Kit](https://www.sleuthkit.org/) incorporated my entropy code into their [encryption detection](https://www.sleuthkit.org/autopsy/docs/api-docs/4.9.0/_encryption_detection_tools_8java_source.html) module!
 
