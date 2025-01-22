@@ -1,7 +1,8 @@
 ---
-title: "some static"
-date: 2025-01-21T21:15:35-05:00
-draft: false
+title:      "some static"
+date:       2025-01-21T21:15:35-05:00
+lastmod:    2025-01-22T00:29:00-05:00
+draft:      false
 ---
 
 *This story was originally published on Reddit to /r/AntiAntiJokes in 2020*
