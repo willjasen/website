@@ -1,7 +1,8 @@
 ---
-title: "create your own darkcloud"
-date: 2024-09-25T21:54:40-04:00
-draft: false
+title:      "create your own darkcloud"
+date:       2024-09-25T21:54:40-04:00
+lastmod:    2025-01-22T16:14:00-05:00
+draft:      false
 ---
 
 ### Intro

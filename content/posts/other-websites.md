@@ -1,7 +1,8 @@
 ---
-title: "other websites"
-date: 2024-01-18T06:59:43-05:00
-draft: false
+title:      "other websites"
+date:       2024-01-18T06:59:43-05:00
+lastmod:    2025-01-22T16:14:00-05:00
+draft:      false
 ---
 Here's some other websites I've made and manage! I use an [uptime dashboard](https://uptime.willjasen.com) to keep track of them being online.
 
