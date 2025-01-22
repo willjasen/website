@@ -32,6 +32,14 @@ summaryLength = 0
       name = "search"
       url = "/search/"
       title = ""
+  [[menu.main]]
+      weight = 4
+      identifier = "uptime"
+      pre = ""
+      post = ""
+      name = "uptime"
+      url = "https://uptime.willjasen.com"
+      title = ""
 
 [params]
   title = "willjasen"
