@@ -74,6 +74,9 @@ summaryLength = 0
     [params.analytics.google]
       id = "G-H5JWMTWEHQ"
       anonymizeIP = true
+    
+    [params.analytics.cloudflare]
+      token = "d4e78615d49049eca81ec6afe095fec2"
 
     [params.social]
       GitHub = "willjasen"
