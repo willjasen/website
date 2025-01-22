@@ -60,7 +60,7 @@ summaryLength = 0
       social = true
     [params.home.posts]
         enable = true
-        paginate = 5
+        paginate = 10
 
   [params.verification]
 
@@ -70,7 +70,7 @@ summaryLength = 0
 
   [params.analytics]
     enable = true
-    
+
     [params.analytics.google]
       id = "G-H5JWMTWEHQ"
       anonymizeIP = true
