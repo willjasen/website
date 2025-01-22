@@ -5,5 +5,3 @@ draft: false
 ---
 
 The family tree website can be found here: https://family.willjasen.com
-
-<!-- {{< iframe >}} -->

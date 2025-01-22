@@ -6,6 +6,7 @@ googleAnalytics = "G-H5JWMTWEHQ"
 enableRobotsTXT = true
 languageCode = "en-us"
 summaryLength = 0
+ignoreLogs = ['warning-goldmark-raw-html']
 
 [menu]
   [[menu.main]]
