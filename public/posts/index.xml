@@ -6,214 +6,72 @@
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 21 Jan 2025 21:15:35 -0500</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
     <title>some static</title>
     <link>/posts/some-static/</link>
-    <pubDate>Tue, 21 Jan 2025 21:15:35 -0500</pubDate>
-    <author>willjasen</author>
-    <guid>/posts/some-static/</guid>
-    <description><![CDATA[<p><em>This story was originally published on Reddit to /r/AntiAntiJokes in 2020</em></p>
-<p>A man walks into a bar and staggers in puzzled as there is no bartender to be found. The only thing there is an old TV, shining brightly in the darkened establishment. As he slowly approaches the bar counter, he hears a hissing noise and notices static snow on the TV.</p>
-<p>Disillusioned of a bar with no bartender, the man reaches behind the counter and pours himself a shot of whiskey into a highball glass. He raises the glass, tilts his head back, and takes a gulp. The man then turns his attention back and attempts to change the channel on the TV. He clicks it twice and suddenly a picture appears. He gazes into the television set and notices&hellip;</p>]]></description>
-</item>
-<item>
+    <pubDate>Tue, 21 Jan 2025 21:15:35 -0500</pubDate><author>
+        <name>willjasen</name>
+    </author><guid>/posts/some-static/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>💚 sugar 💙</title>
     <link>/posts/sugar/</link>
-    <pubDate>Fri, 06 Dec 2024 15:00:00 -0500</pubDate>
-    <author>willjasen</author>
-    <guid>/posts/sugar/</guid>
-    <description><![CDATA[<p>i have to catch a plane in a few hours but coming back home on monday won’t be as sweet anymore</p>
-<p>sugar was the best and sweetest lil’ kitty that i’ve ever known. she put up such a good face and a great fight since her health started declining. we thought her time had come months ago after her sky blue right eye ruptured but our vet doctor agreed to remove it, with the next day seeing her happier and feeling better than she had been a while. for the last few months, she became much more a lil’ baby than a kitty.</p>]]></description>
-</item>
-<item>
+    <pubDate>Fri, 06 Dec 2024 15:00:00 -0500</pubDate><author>
+        <name>willjasen</name>
+    </author><guid>/posts/sugar/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>create your own darkcloud</title>
     <link>/posts/create-your-own-darkcloud/</link>
-    <pubDate>Wed, 25 Sep 2024 21:54:40 -0400</pubDate>
-    <author>willjasen</author>
-    <guid>/posts/create-your-own-darkcloud/</guid>
-    <description><![CDATA[<h3 id="intro">Intro</h3>
-<ul>
-<li>what is a darkcloud? most people have heard of a darknet; a darkcloud can utilize aspects of darknets but applies more specifically to your own services</li>
-<li>as a self-hosting proponent, darkclouds make your various services and data available to you and chosen others in an authorized and private fashion</li>
-<li>one of the main reasons is to make services easily accessible while still making sure that security is considered; done properly, it&rsquo;s harder for an attacker to hack what they&rsquo;re unable to reach</li>
-<li>it can sometimes makes sense to roll-your-own cloud, access to computing power is extremely cheap, though electricity is a cost concern</li>
-<li>the internet itself has whole other hidden components</li>
-</ul>
-<h3 id="components">Components</h3>
-<ul>
-<li><a href="https://tailscale.com/" target="_blank" rel="noopener noreffer ">Tailscale</a> - a mesh VPN framework</li>
-<li><a href="https://runtipi.io/" target="_blank" rel="noopener noreffer ">Tipi</a> - a containerized application management interface</li>
-<li><a href="https://syncthing.net/" target="_blank" rel="noopener noreffer ">Syncthing</a> - a folder replication application</li>
-<li><a href="https://uptime.kuma.pet/" target="_blank" rel="noopener noreffer ">Uptime Kuma</a> - a monitoring service for other services</li>
-</ul>
-<h3 id="tailscale">Tailscale</h3>
-<ul>
-<li>start with almost any kind of computer; for example, I have some Lenovo M600 Tiny PCs and virtual machines, but even something like a Raspberry Pi can be used</li>
-<li>Install Linux; I use Ubuntu but most flavors of Linux should work fine; of course if you&rsquo;re using a Pi, you&rsquo;ll be using Raspbian OS</li>
-<li>Once Linux is installed, sign up for Tailscale via <a href="https://login.tailscale.com/login" target="_blank" rel="noopener noreffer ">tailscale.com/login</a>
-<ul>
-<li>Tailscale has <a href="https://tailscale.com/download" target="_blank" rel="noopener noreffer ">apps for Linux, macOS, Windows, iOS, Android</a>, even Apple&rsquo;s tvOS as of recently; as a personal user of Tailscale, I sign into it with GitHub</li>
-<li>Tailscale is based off of <a href="https://www.wireguard.com/" target="_blank" rel="noopener noreffer ">WireGuard</a></li>
-<li>there are other platforms like <a href="https://headscale.net/running-headscale-linux/" target="_blank" rel="noopener noreffer ">Headscale</a> which is fully self-hosted but I landed on Tailscale and its free tier has served my needs well enough</li>
-</ul>
-</li>
-<li>Tailscale uses what&rsquo;s termed as the CG-NAT space within IP addressing which is the subnet of 100.64.0.0/10 (the range of 100.64.0.0 to 100.127.255.255); this range is not publicly routable on the Internet</li>
-<li>You&rsquo;ll also want to turn on <a href="https://tailscale.com/kb/1081/magicdns" target="_blank" rel="noopener noreffer ">MagicDNS</a> within Tailscale as this helps to remember names of devices instead of an IP address; when setting up, you&rsquo;ll essentially roll two random words that will be used for your MagicDNS so roll until you find something memorable or funny! Mine is &ldquo;risk-mermaid&rdquo; (MagicDNS names aren&rsquo;t private and don&rsquo;t need to be; in fact, if you use the Tailscale certs feature, the certificates details are published to a public ledger, however only devices within your tailnet will be able to resolve from this domain into an IP address)</li>
-</ul>
-<h3 id="tipi">Tipi</h3>
-<ul>
-<li>Install Tipi on your host from runtipi.io by running:
-<code>curl -L https://setup.runtipi.io | bash</code></li>
-<li>Tipi is an application deployment manager for Docker and has its own app store (the apps are free and apps are regularly added and updated); when you install an app via Tipi, it is essentially deploying that app via Docker</li>
-<li>Once Tipi has installed, go to the machine&rsquo;s Tailscale hostname or IP address in a web browser, which will ask to initially setup a username and password to access Tipi</li>
-<li>Once logged in, you can go to the Apps tab and search for an app you&rsquo;d like to install; we&rsquo;ll install Syncthing as an example</li>
-<li>Syncthing is a peer-to-peer file replication app that takes a folder of data you point it to on one machine and then sync that data to other machines</li>
-<li>Tipi does have the ability to expose apps as well in the event that you wish to make them available publicly however I&rsquo;m not going to cover that here</li>
-<li>Once Syncthing has installed from the Tipi app store, click the button to view its link; Syncthing uses port 8090 within Tipi for reference; these ports are assigned when apps get added to the Tipi app store and should be the same across Tipi installs</li>
-<li>Now it doesn&rsquo;t suffice to only have Tailscale on your host, so now you&rsquo;ll want to install it on your other devices as well, then access your newly deployed Syncthing app via Tipi via the MagicDNS link (along with the port of course)
-<ul>
-<li>Example: &ldquo;monitoring.yak-bebop.ts.net:8090&rdquo;
-</li>
-</ul>
-</li>
-<li>If all goes well, the main webpage of that Syncthing instance should load</li>
-</ul>
-<h3 id="syncthing">Syncthing</h3>
-<ul>
-<li>When you first access Syncthing, you should be presented with a banner near the top of the page warning about there not being credentials for the app, you&rsquo;ll want to go into its settings and setup a username/password for its webpage GUI</li>
-<li>Now for Syncthing to have something to sync, you&rsquo;ll want to set it up on another device; for example, I have it on my MacBook Pro; grab the Syncthing device ID from the Tipi instance (Actions &ndash;&gt; Show ID) and use it to add a remote device from your workstation; go back to the Tipi instance to accept the new device; now you have two devices ready to sync data between them</li>
-<li>For extra security, edit the listen parameter of the host within Syncthing from dynamic to something like <code>tcp://monitoring.yak-bebop.ts.net:22000</code> then do the similar (change the host part) on the other host; this will cause Syncthing to communicate with the remote host via Tailscale; this may be overkill as Syncthing&rsquo;s communication between hosts is encrypted but security happens in layers</li>
-<li>Now we&rsquo;re ready to create a folder within Syncthing that will be synced; on your workstation, click the Add Folder button then point it to the folder path where the data you want to replicate is (below: /var/syncthing/folders/test-folder)</li>
-<li>Move to the Sharing tab and select the other device
-</li>
-<li>Now on the Advanced tab, make sure the Folder Type is Send &amp; Receive
-</li>
-<li>Because this is the source folder that we want to replicate, send/receive is selected so that; choosing receive only as the folder type means that the device will stay in sync with other devices but any changes locally on the device aren&rsquo;t replicated out to others, useful to maintain a copy of data where changes to that data on the device aren&rsquo;t expected</li>
-</ul>
-<h3 id="uptime-kuma">Uptime Kuma</h3>
-<ul>
-<li>Now that you have your first darkcloud service, you&rsquo;re gonna want to monitor it - Uptime Kuma does just that!</li>
-<li>Install Uptime Kuma from the Tipi app store, then navigate to its link (its port should be 8125); of course, you&rsquo;ll want to put a username/password on it</li>
-<li>Click the Add New Monitor button, then add the monitor as follows:</li>
-<li>This can be slightly confusing, but the URL hostname to use here is generally going to be the name of the app with its otherwise app-specific port; the reason for this format is that the hostname will reflect the docker instance&rsquo;s name which is named after the app (as defined via the app store) and for the port in this case, 8384 is the port Syncthing typically uses for its web interface</li>
-<li>For some reason I have yet to discover, Uptime Kuma (and other Tipi apps) have trouble accessing the local device via Tailscale, but accessing other devices are fine otherwise</li>
-</ul>
-<h3 id="things-to-consider">Things to Consider</h3>
-<ul>
-<li>Other common apps that are available via Tipi include:
-<ul>
-<li><a href="https://nextcloud.com/" target="_blank" rel="noopener noreffer ">Nextcloud</a> (storage/voice/et. al plugins)</li>
-<li><a href="https://github.com/dani-garcia/vaultwarden" target="_blank" rel="noopener noreffer ">VaultWarden</a> (password vault)</li>
-<li><a href="https://adguard.com" target="_blank" rel="noopener noreffer ">AdGuard</a> &amp; <a href="https://pi-hole.net/" target="_blank" rel="noopener noreffer ">Pi-hole</a> (DNS)</li>
-<li><a href="https://jellyfin.org/" target="_blank" rel="noopener noreffer ">Jellyfin</a> (media)</li>
-<li><a href="https://homebridge.io/" target="_blank" rel="noopener noreffer ">Homebridge</a> &amp; <a href="https://www.home-assistant.io/" target="_blank" rel="noopener noreffer ">Home Assistant</a> (home automation)</li>
-</ul>
-</li>
-<li>Tailscale can poke through firewalls (most of the time) so there&rsquo;s no need to open various ports on your router for the services within your darkcloud</li>
-<li>For good security hygiene and practices, setting up a <a href="https://tailscale.com/kb/1018/acls" target="_blank" rel="noopener noreffer ">Tailscale ACL</a> (access control list) is recommended so that only the things you wish to be available via your darkcloud can be reached (as opposed to allow everything)</li>
-<li>Changing a LAN IP of a host doesn&rsquo;t change its Tailscale IP, so as you may move devices around, the way you access those services via Tailscale doesn&rsquo;t change</li>
-<li>Tailscale doesn&rsquo;t provide anonymity per se; just like any other kind of IP traffic, source and destination IP addresses can be examined to determine who&rsquo;s talking to who, but communication otherwise is private</li>
-<li>Tailscale will encrypt data-in-transit but you should also consider encrypting the data-at-rest as well (FileVault on macOS, BitLocker on Windows, LUKS in Linux, <a href="https://cryptomator.org/" target="_blank" rel="noopener noreffer ">Cryptomator</a> for file containers)</li>
-</ul>
-<h3 id="epilogue">Epilogue</h3>
-<ul>
-<li>So that&rsquo;s it! You now have the basis for to grow your darkcloud. Add more apps at your leisure and add further hosts as resources are available</li>
-</ul>
-<!-- raw HTML omitted -->
-<pre><code>Wir sind im richtigen menschlichen Leben, das nun Programme im Hintergrund erfordert
-</code></pre>]]></description>
-</item>
-<item>
+    <pubDate>Wed, 25 Sep 2024 21:54:40 -0400</pubDate><author>
+        <name>willjasen</name>
+    </author><guid>/posts/create-your-own-darkcloud/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>other websites</title>
     <link>/posts/other-websites/</link>
-    <pubDate>Thu, 18 Jan 2024 06:59:43 -0500</pubDate>
-    <author>willjasen</author>
-    <guid>/posts/other-websites/</guid>
-    <description><![CDATA[<p>Here&rsquo;s some other websites I&rsquo;ve made and manage! I use an <a href="https://uptime.willjasen.com" target="_blank" rel="noopener noreffer ">uptime dashboard</a> to keep track of them being online.</p>
-<ul>
-<li><a href="https://school.willjasen.com" target="_blank" rel="noopener noreffer ">school</a> &ndash; digital files from high school and college</li>
-<li><a href="https://family.willjasen.com" target="_blank" rel="noopener noreffer ">family</a> - a family tree</li>
-<li><a href="https://dna.willjasen.com" target="_blank" rel="noopener noreffer ">my dna</a> - a&rsquo;s, c&rsquo;s, g&rsquo;s, &amp; t&rsquo;s</li>
-<li><a href="https://old.willjasen.com" target="_blank" rel="noopener noreffer ">old website</a> - the first website that i ever had</li>
-<li><a href="https://nimbi.it" target="_blank" rel="noopener noreffer ">nimbi</a> - a cloudly vision</li>
-<li><a href="https://levitating.ceo" target="_blank" rel="noopener noreffer ">rise to the challenge</a> - learn how to take your company to the next level</li>
-<li><a href="https://stretchie.delivery" target="_blank" rel="noopener noreffer ">codename: wallace-thrasher</a> - i got a package for ya</li>
-</ul>]]></description>
-</item>
-<item>
+    <pubDate>Thu, 18 Jan 2024 06:59:43 -0500</pubDate><author>
+        <name>willjasen</name>
+    </author><guid>/posts/other-websites/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>on being gay</title>
     <link>/posts/gay/</link>
-    <pubDate>Mon, 11 Oct 2021 19:06:19 -0400</pubDate>
-    <author>willjasen</author>
-    <guid>/posts/gay/</guid>
-    <description><![CDATA[<p>“The thing you need to know is, it’s all about sex.”</p>
-<p>These are the opening words in the US series premier of Queer as Folk, and yes, the first and last thing you should know is that it&rsquo;s all about sex. Being gay is a sexual predisposition - one in which lots of people find themselves attracted to the same sex.</p>
-<p>Modern society has traditionally shunned homosexuality, sometimes leading to situations which finds people imprisoned or where those who are persecuted end their lives. Such a prime example would be that of Alan Turing, the mastermind of modern computing. Turing devoted his life to creating machines to crack Axis codes during the war, and it was such ended by his own hands after the British government forced him to repress who he was by forcing chemical castration upon him.</p>]]></description>
-</item>
-<item>
+    <pubDate>Mon, 11 Oct 2021 19:06:19 -0400</pubDate><author>
+        <name>willjasen</name>
+    </author><guid>/posts/gay/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>family</title>
     <link>/posts/family/</link>
-    <pubDate>Wed, 28 Apr 2021 12:19:00 -0400</pubDate>
-    <author>willjasen</author>
-    <guid>/posts/family/</guid>
-    <description><![CDATA[<p>The family tree website can be found here: <a href="https://family.willjasen.com" target="_blank" rel="noopener noreffer ">https://family.willjasen.com</a></p>
-<!-- raw HTML omitted -->]]></description>
-</item>
-<item>
+    <pubDate>Wed, 28 Apr 2021 12:19:00 -0400</pubDate><author>
+        <name>willjasen</name>
+    </author><guid>/posts/family/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>parched</title>
     <link>/posts/parched/</link>
-    <pubDate>Sat, 16 Jan 2021 18:11:54 -0500</pubDate>
-    <author>willjasen</author>
-    <guid>/posts/parched/</guid>
-    <description><![CDATA[<p><em>This was originally published on Reddit to /r/AntiAntiJokes on November 23, 2019</em></p>
-<p>A parched man goes to a vending machine.</p>
-<p>“OUT OF ORDER”, the screen blinks after it hungrily eats his change.</p>
-<p>That’s when he realized - all of his change was gone.</p>
-<p>The man, having attempted to obtain a rental movie, moves on to get a beverage. He finds a local bar, but as soon as he steps up to the bar to order, he realizes yet again that his change was gone. The floor of the bar splits with a thunderous crack as everything viciously dissolves away.</p>]]></description>
-</item>
-<item>
+    <pubDate>Sat, 16 Jan 2021 18:11:54 -0500</pubDate><author>
+        <name>willjasen</name>
+    </author><guid>/posts/parched/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>rainstash</title>
     <link>/posts/rainstash/</link>
-    <pubDate>Fri, 27 Nov 2020 17:50:15 -0500</pubDate>
-    <author>willjasen</author>
-    <guid>/posts/rainstash/</guid>
-    <description><![CDATA[<p>rainstash is an Amazon CloudFormation template for automating the setup of Resilio Sync in the Amazon cloud.</p>
-<p>rainstash and Amazon CloudFormation is completely free to use, however, Amazon may charge for the use of resources created with rainstash. rainstash uses the following cost-related services: EC2, S3, and data transfer.</p>
-<p>Due to technical and security considerations, rainstash by default only accepts encrypted read-only folder keys for the best security. That encrypted data itself resides on an encrypted virtual disk volume, but the instance is meant to be ephimeral. If the EC2 instance where rainstash is running is shutdown or rebooted, data on that instance is not trivially recoverable. The workaround - the BitTorrent protocol and Resilio Sync are meant to be decentralized and distributed. Always have more than one copy of your folders, whether it&rsquo;s multiple rainstash stacks or running on your own hardware. Please keep this in mind!</p>]]></description>
-</item>
-<item>
+    <pubDate>Fri, 27 Nov 2020 17:50:15 -0500</pubDate><author>
+        <name>willjasen</name>
+    </author><guid>/posts/rainstash/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>information entropy</title>
     <link>/posts/entropy/</link>
-    <pubDate>Fri, 27 Nov 2020 10:48:02 -0500</pubDate>
-    <author>willjasen</author>
-    <guid>/posts/entropy/</guid>
-    <description><![CDATA[<link rel="stylesheet" 
-	  href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
-	  integrity="sha512-mQwom8Ns4op+H29oDkD/LXO/OsXPvCFfkgZkFAVrhhePzRLU8NUI3Nkm43NhWUSmj3p5Cca2HTEkMQmXQRwDQQ=="
-	  crossorigin="anonymous"
->
-<script defer 
-		src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
-		integrity="sha512-sHSNLECRJSK+BFs7E8DiFc6pf6n90bLI85Emiw1jhreduZhK3VXgq9l4kAt9eTIHYAcuQBKHL01QKs4/3Xgl8g=="
-		crossorigin="anonymous"
-></script>
-<script defer 
-		src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
-		integrity="sha512-iWiuBS5nt6r60fCz26Nd0Zqe0nbk1ZTIQbl3Kv7kYsX+yKMUFHzjaH2+AnM6vp2Xs+gNmaBAVWJjSmuPw76Efg=="
-		crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"
-></script>
-
-<p><em>This article was originally published on March 19, 2014 in correspondence with a talk I gave</em></p>
-<p></p>
-<p>After one late night attempting to explain the laws of information entropy, I decided to write an article to sum it up (literally).</p>
-<p>We usually hear about entropy in regards to physics, in which it describes how random a physical system is. Newton’s Second Law of Thermodynamics states that a system’s entropy increases over time naturally, meaning that randomness is increased. Information entropy is a little different than physical entropy, though there are related aspects. Information entropy describes how random the information is, though its entropy does not naturally increase over time. Information entropy was first described by Claude Shannon in 1948.</p>]]></description>
-</item>
-<item>
+    <pubDate>Fri, 27 Nov 2020 10:48:02 -0500</pubDate><author>
+        <name>willjasen</name>
+    </author><guid>/posts/entropy/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>welcome!</title>
     <link>/posts/welcome/</link>
-    <pubDate>Sun, 22 Nov 2020 21:27:40 -0500</pubDate>
-    <author>willjasen</author>
-    <guid>/posts/welcome/</guid>
-    <description><![CDATA[<p>My name is Brandon and this is my website!</p>
-<p>I chose the pseudonym &lsquo;willjasen&rsquo; way back in my sophomore year of high school as a stand-in for a stage name. At the time, I was practicing magic and sleight-of-hand and wanted a new, unique name to go by. My middle name is William, so the first name of &lsquo;will&rsquo; was easily chosen. As for the last name of &lsquo;jasen&rsquo;, I had recently seen a magician on TV named &ldquo;Jasen Magic&rdquo;, and something clicked for me and I put the two together - &lsquo;willjasen&rsquo; was then born. I always like to note that the moniker must be in lowercase and squished together - it&rsquo;s not a proper name!</p>]]></description>
-</item>
-</channel>
+    <pubDate>Sun, 22 Nov 2020 21:27:40 -0500</pubDate><author>
+        <name>willjasen</name>
+    </author><guid>/posts/welcome/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>
