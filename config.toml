@@ -46,7 +46,7 @@ summaryLength = 0
   [params.header]
     [params.header.title]
       name = "the webz"
-      logo = "/profile_pic.jpg"
+      logo = "/pfp.webp"
   [params.footer]
     copyright = false
     author = true
@@ -55,7 +55,7 @@ summaryLength = 0
     noFavicon = false
   [params.home]
     [params.home.profile]
-      avatarURL = "/profile_pic.jpg"
+      avatarURL = "/pfp.webp"
       subtitle = "willjasen"
       social = true
     [params.home.posts]
@@ -65,8 +65,8 @@ summaryLength = 0
   [params.verification]
 
   [params.seo]
-    image = "/profile_pic.jpg"
-    thumbnailUrl = "/profile_pic.jpg"
+    image = "/pfp.webp"
+    thumbnailUrl = "/pfp.webp"
 
   [params.analytics]
     enable = true
@@ -105,10 +105,10 @@ summaryLength = 0
         keepStatic = false
         auto = true
       [params.page.seo]
-        images = ["/profile_pic.jpg"]
+        images = ["/pfp.webp"]
         [params.page.seo.publisher]
           name = "willjasen"
-          logoUrl = "/profile_pic.jpg"
+          logoUrl = "/pfp.webp"
         [params.page.share]
           enable = true
           Twitter = true
