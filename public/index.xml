@@ -3,9 +3,16 @@
         <title>willjasen</title>
         <link>/</link>
         <description>transhumanist and high functioning loser; instantiated simulation, statically stuck in superposition, calculated computationally complex, technomancer at will</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 21 Jan 2025 21:15:35 -0500</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 21 Feb 2025 00:50:25 -0500</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>billie</title>
+    <link>/posts/billie/</link>
+    <pubDate>Fri, 21 Feb 2025 00:50:25 -0500</pubDate><author>
+        <name>willjasen</name>
+    </author><guid>/posts/billie/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>some static</title>
     <link>/posts/some-static/</link>
     <pubDate>Tue, 21 Jan 2025 21:15:35 -0500</pubDate><author>
@@ -67,13 +74,6 @@
     <pubDate>Fri, 27 Nov 2020 10:48:02 -0500</pubDate><author>
         <name>willjasen</name>
     </author><guid>/posts/entropy/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>welcome!</title>
-    <link>/posts/welcome/</link>
-    <pubDate>Sun, 22 Nov 2020 21:27:40 -0500</pubDate><author>
-        <name>willjasen</name>
-    </author><guid>/posts/welcome/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

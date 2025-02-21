@@ -69,7 +69,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
       social = true
     [params.home.posts]
         enable = true
-        paginate = 10
+        paginate = 20
 
   [params.verification]
 
