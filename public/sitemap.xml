@@ -2,9 +2,10 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>/posts/</loc><lastmod>2025-01-22T16:14:00-05:00</lastmod></url><url>
+            <loc>/posts/billie/</loc><lastmod>2025-02-21T00:50:25-05:00</lastmod></url><url>
+            <loc>/posts/</loc><lastmod>2025-02-21T00:50:25-05:00</lastmod></url><url>
+            <loc>/</loc><lastmod>2025-02-21T00:50:25-05:00</lastmod></url><url>
             <loc>/posts/some-static/</loc><lastmod>2025-01-22T00:29:00-05:00</lastmod></url><url>
-            <loc>/</loc><lastmod>2025-01-22T16:14:00-05:00</lastmod></url><url>
             <loc>/posts/sugar/</loc><lastmod>2024-12-06T15:00:00-05:00</lastmod></url><url>
             <loc>/posts/create-your-own-darkcloud/</loc><lastmod>2025-01-22T16:14:00-05:00</lastmod></url><url>
             <loc>/search/</loc><lastmod>2024-08-31T08:56:42-04:00</lastmod></url><url>
