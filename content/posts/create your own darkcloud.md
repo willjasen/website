@@ -84,6 +84,6 @@ draft:      false
 
 - So that's it! You now have the basis for to grow your darkcloud. Add more apps at your leisure and add further hosts as resources are available
 
-<!-- -->
+---
 
     Wir sind im richtigen menschlichen Leben, das nun Programme im Hintergrund erfordert

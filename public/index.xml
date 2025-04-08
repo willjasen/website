@@ -1,79 +1,79 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>willjasen</title>
-        <link>//localhost:1313/</link>
+        <link>/</link>
         <description>transhumanist and high functioning loser; instantiated simulation, statically stuck in superposition, calculated computationally complex, technomancer at will</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 21 Feb 2025 00:50:25 -0500</lastBuildDate>
-            <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>billie</title>
-    <link>//localhost:1313/posts/billie/</link>
+    <link>/posts/billie/</link>
     <pubDate>Fri, 21 Feb 2025 00:50:25 -0500</pubDate><author>
         <name>willjasen</name>
-    </author><guid>//localhost:1313/posts/billie/</guid>
+    </author><guid>/posts/billie/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>some static</title>
-    <link>//localhost:1313/posts/some-static/</link>
+    <link>/posts/some-static/</link>
     <pubDate>Tue, 21 Jan 2025 21:15:35 -0500</pubDate><author>
         <name>willjasen</name>
-    </author><guid>//localhost:1313/posts/some-static/</guid>
+    </author><guid>/posts/some-static/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>💚 sugar 💙</title>
-    <link>//localhost:1313/posts/sugar/</link>
+    <link>/posts/sugar/</link>
     <pubDate>Fri, 06 Dec 2024 15:00:00 -0500</pubDate><author>
         <name>willjasen</name>
-    </author><guid>//localhost:1313/posts/sugar/</guid>
+    </author><guid>/posts/sugar/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>create your own darkcloud</title>
-    <link>//localhost:1313/posts/create-your-own-darkcloud/</link>
+    <link>/posts/create-your-own-darkcloud/</link>
     <pubDate>Wed, 25 Sep 2024 21:54:40 -0400</pubDate><author>
         <name>willjasen</name>
-    </author><guid>//localhost:1313/posts/create-your-own-darkcloud/</guid>
+    </author><guid>/posts/create-your-own-darkcloud/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>other websites</title>
-    <link>//localhost:1313/posts/other-websites/</link>
+    <link>/posts/other-websites/</link>
     <pubDate>Thu, 18 Jan 2024 06:59:43 -0500</pubDate><author>
         <name>willjasen</name>
-    </author><guid>//localhost:1313/posts/other-websites/</guid>
+    </author><guid>/posts/other-websites/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>on being gay</title>
-    <link>//localhost:1313/posts/gay/</link>
+    <link>/posts/gay/</link>
     <pubDate>Mon, 11 Oct 2021 19:06:19 -0400</pubDate><author>
         <name>willjasen</name>
-    </author><guid>//localhost:1313/posts/gay/</guid>
+    </author><guid>/posts/gay/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>family tree</title>
-    <link>//localhost:1313/posts/family/</link>
+    <link>/posts/family/</link>
     <pubDate>Wed, 28 Apr 2021 12:19:00 -0400</pubDate><author>
         <name>willjasen</name>
-    </author><guid>//localhost:1313/posts/family/</guid>
+    </author><guid>/posts/family/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>parched</title>
-    <link>//localhost:1313/posts/parched/</link>
+    <link>/posts/parched/</link>
     <pubDate>Sat, 16 Jan 2021 18:11:54 -0500</pubDate><author>
         <name>willjasen</name>
-    </author><guid>//localhost:1313/posts/parched/</guid>
+    </author><guid>/posts/parched/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>rainstash</title>
-    <link>//localhost:1313/posts/rainstash/</link>
+    <link>/posts/rainstash/</link>
     <pubDate>Fri, 27 Nov 2020 17:50:15 -0500</pubDate><author>
         <name>willjasen</name>
-    </author><guid>//localhost:1313/posts/rainstash/</guid>
+    </author><guid>/posts/rainstash/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>information entropy</title>
-    <link>//localhost:1313/posts/entropy/</link>
+    <link>/posts/entropy/</link>
     <pubDate>Fri, 27 Nov 2020 10:48:02 -0500</pubDate><author>
         <name>willjasen</name>
-    </author><guid>//localhost:1313/posts/entropy/</guid>
+    </author><guid>/posts/entropy/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
