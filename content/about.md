@@ -12,7 +12,7 @@ this website is one of the many that i have created and manage but this one is m
 - bitcoin: bc1qffxk4uqgaspuv9w8tnt7qjs63hlvxyda6l38wl
 - ethereum: [willjasen.eth](https://app.ens.domains/willjasen.eth)
 
-view this website on the dark web: zaa5p6jabyoaqt433uiofzalbzaziqhymd6mjjcbhliv4ihjejzhblqd.onion
+view this website on the dark web (TOR): zaa5p6jabyoaqt433uiofzalbzaziqhymd6mjjcbhliv4ihjejzhblqd.onion
 
 ---
 
