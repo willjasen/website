@@ -13,6 +13,7 @@ this website is one of the many that i have created and manage but this one is m
 - ethereum: [willjasen.eth](https://app.ens.domains/willjasen.eth)
 
 view this website on the dark web (TOR): zaa5p6jabyoaqt433uiofzalbzaziqhymd6mjjcbhliv4ihjejzhblqd.onion
+(may not be up-to-date)
 
 ---
 
