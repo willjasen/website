@@ -1,9 +1,11 @@
 ---
 title:      "about"
 date:       2020-11-22T21:36:27-05:00
-lastmod:    2025-04-08T16:21:00-05:00
+lastmod:    2025-05-04T18:59:00-04:00
 draft:      false
 ---
+
+my name is brandon and this is my website!
 
 i chose the pseudonym ‘willjasen’ way back in my sophomore year of high school as a stand-in for a stage name. at the time, i was practicing magic and sleight-of-hand and wanted a new, unique name to go by. my middle name is william, so the first name of ‘will’ was easily chosen. as for the last name of ‘jasen’, i had recently seen a magician on tv named “jasen magic”, and something clicked for me and i put the two together - ‘willjasen’ was then born. i always like to note that the moniker must be in lowercase and squished together - it’s not a proper name! i also use the lowercase stylization throughtout the many forms of online media, just to be different.
 
