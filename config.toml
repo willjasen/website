@@ -27,14 +27,6 @@ ignoreLogs = ['warning-goldmark-raw-html']
       title = ""
   [[menu.main]]
       weight = 3
-      identifier = "search"
-      pre = ""
-      post = ""
-      name = "search"
-      url = "/search/"
-      title = ""
-  [[menu.main]]
-      weight = 4
       identifier = "uptime"
       pre = ""
       post = ""
