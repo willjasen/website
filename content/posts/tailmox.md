@@ -13,3 +13,5 @@ i will preface that while my testing of tailmox with three freshly installed pro
 i will also state that discussion replies here centered around asking questions or explaining the technical intricacies of proxmox and its clustering mechanism of corosync are welcome and appreciated. replies that outright dismiss this as an idea altogether with no justification or experience in can be withheld, please.
 
 the github repo is at: https://github.com/willjasen/tailmox
+
+![GitHub Release](https://img.shields.io/github/v/release/willjasen/tailmox)
