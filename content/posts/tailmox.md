@@ -1,6 +1,7 @@
 ---
 title: "tailmox"
 date: 2025-05-04T18:45:44-04:00
+lastmod:    2025-10-26T20:21:00-05:00
 draft: false
 ---
 
