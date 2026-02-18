@@ -1,7 +1,7 @@
 ---
 title: "welcome! 👋🏻"
 date: 2020-11-22T21:27:40-05:00
-lastmod: 2025-05-04T18:59:00-04:00
+lastmod: 2026-02-17T20:17:22-05:00
 draft: false
 ---
 my name is brandon and this is my website!
