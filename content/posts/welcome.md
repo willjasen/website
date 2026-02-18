@@ -13,9 +13,6 @@ this website is one of the many that i have created and manage but this one is m
 - bitcoin: bc1qffxk4uqgaspuv9w8tnt7qjs63hlvxyda6l38wl
 - ethereum: [willjasen.eth](https://app.ens.domains/willjasen.eth)
 
-view this website on the dark web (TOR): zaa5p6jabyoaqt433uiofzalbzaziqhymd6mjjcbhliv4ihjejzhblqd.onion
-(may not be up-to-date)
-
 ---
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/42783427-82aa-4b97-9eb0-7fab47587d76/deploy-status)](https://app.netlify.com/sites/willjasen-website/deploys) -- Netlify deployment status
