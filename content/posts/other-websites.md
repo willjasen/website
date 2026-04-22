@@ -4,7 +4,9 @@ date:       2024-01-18T06:59:43-05:00
 lastmod:    2026-04-21T16:20:45-04:00
 draft:      false
 ---
-Here's some other websites I've made and manage! I use an [uptime dashboard](https://uptime.willjasen.com) to keep track of them being online.
+Here's some other websites I've made and manage!
+
+I use an [uptime dashboard](https://uptime.willjasen.com) to keep track of them being online.
 
 - [school](https://school.willjasen.com) -- ![Website](https://img.shields.io/website?url=https%3A%2F%2Fschool.willjasen.com&label=digitized%20media%20from%20high%20school%20and%20college)
 - [family](https://family.willjasen.com) -- ![Website](https://img.shields.io/website?url=https%3A%2F%2Ffamily.willjasen.com&label=a%20family%20tree)
