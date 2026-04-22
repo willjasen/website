@@ -45,7 +45,7 @@
     }</script></head>
 
 
-<body data-instant-intensity="viewport" class="tw-flex tw-min-h-screen tw-flex-col"><script type="text/javascript">
+<body data-instant-intensity="viewport" class="tw-flex tw-min-h-screen tw-flex-col"><script>
     function setTheme(theme) {
       document.body.setAttribute('theme', theme); 
       document.documentElement.className = theme;
@@ -83,7 +83,7 @@
     <div id="mask"></div><header class="desktop print:!tw-hidden" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="../../" title="willjasen"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src=../../pfp.webp   alt="the webz" height="32" width="32">the webz</a>
+            <a href="../../" title="willjasen"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src='../../pfp.webp'   alt="the webz" height="32" width="32">the webz</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item"
@@ -100,7 +100,7 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="../../" title="willjasen"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src=../../pfp.webp   alt="the webz" height="32" width="32">the webz</a>
+                <a href="../../" title="willjasen"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src='../../pfp.webp'   alt="the webz" height="32" width="32">the webz</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -231,28 +231,28 @@
 <li>Now it doesn&rsquo;t suffice to only have Tailscale on your host, so now you&rsquo;ll want to install it on your other devices as well, then access your newly deployed Syncthing app via Tipi via the MagicDNS link (along with the port of course)
 <ul>
 <li>Example: &ldquo;monitoring.yak-bebop.ts.net:8090&rdquo;
-<img class="tw-inline" loading="lazy" src=../../posts/darkcloud/f257b0cee848fdce77be199da6774e8c7299d914.png   alt="Tailscale machine vs. tailnet names"  ></li>
+<img class="tw-inline" loading="lazy" src='../../posts/darkcloud/f257b0cee848fdce77be199da6774e8c7299d914.png'   alt="Tailscale machine vs. tailnet names"  ></li>
 </ul>
 </li>
 <li>If all goes well, the main webpage of that Syncthing instance should load</li>
 </ul>
 <h3 id="syncthing" class="headerLink">
     <a href="#syncthing" class="header-mark"></a>Syncthing</h3><ul>
-<li>When you first access Syncthing, you should be presented with a banner near the top of the page warning about there not being credentials for the app, you&rsquo;ll want to go into its settings and setup a username/password for its webpage GUI<img class="tw-inline" loading="lazy" src=../../posts/darkcloud/07efea6349436e6f85fdde2fa6644214ec3eb72f.png   alt="Screenshot 2024-01-30 at 12.57.03 PM 1.png"  ></li>
+<li>When you first access Syncthing, you should be presented with a banner near the top of the page warning about there not being credentials for the app, you&rsquo;ll want to go into its settings and setup a username/password for its webpage GUI<img class="tw-inline" loading="lazy" src='../../posts/darkcloud/07efea6349436e6f85fdde2fa6644214ec3eb72f.png'   alt="Screenshot 2024-01-30 at 12.57.03 PM 1.png"  ></li>
 <li>Now for Syncthing to have something to sync, you&rsquo;ll want to set it up on another device; for example, I have it on my MacBook Pro; grab the Syncthing device ID from the Tipi instance (Actions &ndash;&gt; Show ID) and use it to add a remote device from your workstation; go back to the Tipi instance to accept the new device; now you have two devices ready to sync data between them</li>
 <li>For extra security, edit the listen parameter of the host within Syncthing from dynamic to something like <code>tcp://monitoring.yak-bebop.ts.net:22000</code> then do the similar (change the host part) on the other host; this will cause Syncthing to communicate with the remote host via Tailscale; this may be overkill as Syncthing&rsquo;s communication between hosts is encrypted but security happens in layers</li>
-<li>Now we&rsquo;re ready to create a folder within Syncthing that will be synced; on your workstation, click the Add Folder button then point it to the folder path where the data you want to replicate is (below: /var/syncthing/folders/test-folder)<img class="tw-inline" loading="lazy" src=../../posts/darkcloud/2.png   alt="Screenshot 2024-01-30 at 12.59.59 PM.png"  ></li>
+<li>Now we&rsquo;re ready to create a folder within Syncthing that will be synced; on your workstation, click the Add Folder button then point it to the folder path where the data you want to replicate is (below: /var/syncthing/folders/test-folder)<img class="tw-inline" loading="lazy" src='../../posts/darkcloud/2.png'   alt="Screenshot 2024-01-30 at 12.59.59 PM.png"  ></li>
 <li>Move to the Sharing tab and select the other device
-<img class="tw-inline" loading="lazy" src=../../posts/darkcloud/342d44e51cc458f63ba3bb213f3cae7bbd1b5339.png   alt="Screenshot 2024-01-30 at 1.08.09 PM 1.png"  ></li>
+<img class="tw-inline" loading="lazy" src='../../posts/darkcloud/342d44e51cc458f63ba3bb213f3cae7bbd1b5339.png'   alt="Screenshot 2024-01-30 at 1.08.09 PM 1.png"  ></li>
 <li>Now on the Advanced tab, make sure the Folder Type is Send &amp; Receive
-<img class="tw-inline" loading="lazy" src=../../posts/darkcloud/1.png   alt="Screenshot 2024-01-30 at 1.00.26 PM.png"  ></li>
+<img class="tw-inline" loading="lazy" src='../../posts/darkcloud/1.png'   alt="Screenshot 2024-01-30 at 1.00.26 PM.png"  ></li>
 <li>Because this is the source folder that we want to replicate, send/receive is selected so that; choosing receive only as the folder type means that the device will stay in sync with other devices but any changes locally on the device aren&rsquo;t replicated out to others, useful to maintain a copy of data where changes to that data on the device aren&rsquo;t expected</li>
 </ul>
 <h3 id="uptime-kuma" class="headerLink">
     <a href="#uptime-kuma" class="header-mark"></a>Uptime Kuma</h3><ul>
 <li>Now that you have your first darkcloud service, you&rsquo;re gonna want to monitor it - Uptime Kuma does just that!</li>
 <li>Install Uptime Kuma from the Tipi app store, then navigate to its link (its port should be 8125); of course, you&rsquo;ll want to put a username/password on it</li>
-<li>Click the Add New Monitor button, then add the monitor as follows:<img class="tw-inline" loading="lazy" src=../../posts/darkcloud/a6f82ef418be9f522bba4a632d8104a6a81cdf6d.png   alt="Screenshot 2024-01-30 at 1.45.03 PM 1.png"  ></li>
+<li>Click the Add New Monitor button, then add the monitor as follows:<img class="tw-inline" loading="lazy" src='../../posts/darkcloud/a6f82ef418be9f522bba4a632d8104a6a81cdf6d.png'   alt="Screenshot 2024-01-30 at 1.45.03 PM 1.png"  ></li>
 <li>This can be slightly confusing, but the URL hostname to use here is generally going to be the name of the app with its otherwise app-specific port; the reason for this format is that the hostname will reflect the docker instance&rsquo;s name which is named after the app (as defined via the app store) and for the port in this case, 8384 is the port Syncthing typically uses for its web interface</li>
 <li>For some reason I have yet to discover, Uptime Kuma (and other Tipi apps) have trouble accessing the local device via Tailscale, but accessing other devices are fine otherwise</li>
 </ul>
@@ -317,7 +317,7 @@
 </div>
 </article></main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.154.2">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><svg class="icon"
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.154.2">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 1.0.0"><svg class="icon"
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"/></svg> DoIt</a>
                 </div><div class="footer-line"><span class="author">&nbsp;<a href="../../posts/welcome" target="_blank" rel="noopener noreferrer">willjasen</a></span></div>
             <div class="footer-line"></div>
@@ -341,7 +341,7 @@
     
       defer
     
-  ></script><script type="text/javascript">
+  ></script><script>
             window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
             gtag('config', 'G-H5JWMTWEHQ', { 'anonymize_ip': true });
         </script><script
