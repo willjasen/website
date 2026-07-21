@@ -1,13 +1,14 @@
 ---
-title:      "about"
+title:      "about willjasen"
 date:       2020-11-22T21:36:27-05:00
 lastmod:    2026-02-17T20:17:22-05:00
 draft:      false
+description: "the origin and online identity of willjasen, a lowercase pseudonym used by brandon across websites, code, and social profiles."
 ---
 
 my name is brandon and this is my website!
 
-i chose the pseudonym ‘willjasen’ way back in my sophomore year of high school as a stand-in for a stage name. at the time, i was practicing magic and sleight-of-hand and wanted a new, unique name to go by. my middle name is william, so the first name of ‘will’ was easily chosen. as for the last name of ‘jasen’, i had recently seen a magician on tv named “jasen magic”, and something clicked for me and i put the two together - ‘willjasen’ was then born. i always like to note that the moniker must be in lowercase and squished together - it’s not a proper name! i also use the lowercase stylization throughtout the many forms of online media, just to be different.
+i chose the pseudonym ‘willjasen’ way back in my sophomore year of high school as a stand-in for a stage name. at the time, i was practicing magic and sleight-of-hand and wanted a new, unique name to go by. my middle name is william, so the first name of ‘will’ was easily chosen. as for the last name of ‘jasen’, i had recently seen a magician on tv named “jasen magic”, and something clicked for me and i put the two together - ‘willjasen’ was then born. i always like to note that the moniker must be in lowercase and squished together - it’s not a proper name! i also use the lowercase stylization throughout the many forms of online media, just to be different.
 
 this website is one of the many that i have created and manage but this one is my primary website. this site is deployed to [netlify](https://netlify.com/), with its codebase on [github](https://github.com/willjasen/website), and static site generation with [hugo](https://gohugo.io).
 

@@ -1,7 +1,7 @@
-baseURL = "/"
+baseURL = "https://willjasen.com/"
 title = "willjasen"
 theme = "DoIt"
-relativeURLS=true
+relativeURLS=false
 googleAnalytics = "G-H5JWMTWEHQ"
 enableRobotsTXT = true
 languageCode = "en-us"
@@ -42,7 +42,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   [params.author]
     name = "willjasen"
     email = ""
-    link = "/posts/welcome"
+    link = "/about/"
 
   [params.header]
     [params.header.title]
@@ -68,6 +68,22 @@ ignoreLogs = ['warning-goldmark-raw-html']
   [params.seo]
     image = "/pfp.webp"
     thumbnailUrl = "/pfp.webp"
+    alternateName = ["willjasen.com", "willjasen.net", "willjasen.org"]
+    sameAs = [
+      "https://github.com/willjasen",
+      "https://linkedin.com/in/willjasen",
+      "https://twitter.com/willjasen",
+      "https://www.instagram.com/willjasen",
+      "https://facebook.com/willjasen",
+      "https://keybase.io/willjasen",
+      "https://www.pinterest.com/willjasen",
+      "https://www.reddit.com/user/willjasen",
+      "https://soundcloud.com/willjasen",
+      "https://open.spotify.com/user/willjasen",
+      "https://www.twitch.tv/willjasen",
+      "https://willjasen.tumblr.com/",
+      "https://app.ens.domains/willjasen.eth"
+    ]
 
   [params.analytics]
     enable = true

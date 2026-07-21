@@ -145,8 +145,9 @@
             {{- with .Params.author | default .Site.Params.Author.name | default (T "author") -}}
             "author": {
                 "@type": "Person",
+                "@id": {{ printf "%s#person" $.Page.Site.Home.Permalink }},
                 "name": {{ . | safeHTML }},
-                "url": {{ $link }}
+                "url": {{ $link | absURL }}
             },
             {{- end -}}
         {{- end -}}
@@ -171,6 +172,7 @@
         {{- if $showWebSite -}}
             {
                 "@type": "WebSite",
+                "@id": {{ printf "%s#website" .Permalink }},
                 "url": {{ .Permalink }},
                 {{- with (.Site.Language.Lang | default .Site.LanguageCode) -}}
                     "inLanguage": "{{ . }}",
@@ -178,6 +180,7 @@
                 {{- with .Site.Params.Author.name -}}
                     "author": {
                         "@type": "Person",
+                        "@id": {{ printf "%s#person" $.Site.Home.Permalink }},
                         "name": {{ . | safeHTML }}
                     },
                 {{- end -}}
@@ -215,7 +218,12 @@
                 {{- else -}}
                     "copyrightYear": {{ now.Year }},
                 {{- end -}}
-                {{- if .Site.Params.footer.author -}}
+                {{- if eq .Site.Params.footer.author true -}}
+                    "copyrightHolder": {
+                        "@type": "Person",
+                        "name": {{ .Site.Params.Author.name | safeHTML }}
+                    },
+                {{- else if .Site.Params.footer.author -}}
                     "copyrightHolder": {
                         "@type": "Person",
                         "name": {{ .Site.Params.footer.author | safeHTML }}
@@ -227,6 +235,32 @@
                     },
                 {{- end -}}
                 "name": {{ .Site.Title | safeHTML }}
+            },
+            {
+                "@type": "Person",
+                "@id": {{ printf "%s#person" .Site.Home.Permalink }},
+                "name": {{ .Site.Params.Author.name | default .Site.Title | safeHTML }},
+                "url": {{ .Site.Home.Permalink }},
+                {{- $image := .Site.Params.seo.image -}}
+                {{- with dict "Path" $image "Resources" .Resources | partial "function/resource.html" -}}
+                    "image": {
+                        "@type": "ImageObject",
+                        "url": {{ .Permalink }},
+                        "width": {{ .Width }},
+                        "height": {{ .Height }}
+                    },
+                {{- else -}}
+                    {{- with $image -}}
+                        "image": {{ . | absURL }},
+                    {{- end -}}
+                {{- end -}}
+                {{- with .Site.Params.seo.alternateName -}}
+                    "alternateName": {{- apply . "safeHTML" "." -}},
+                {{- end -}}
+                {{- with .Site.Params.seo.sameAs -}}
+                    "sameAs": {{ . | jsonify | safeJS }},
+                {{- end -}}
+                "description": {{ .Site.Params.description | safeHTML }}
             }
             {{- if $showBlogPosting -}},{{- end -}}
         {{- end -}}
@@ -244,6 +278,42 @@
 {{- /* Page SEO */ -}}
 {{- else if .IsPage -}}
     <script type="application/ld+json">
+    {{- if eq .File.BaseFileName "about" -}}
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "url": {{ .Permalink }},
+            "dateCreated": {{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
+            "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
+            "mainEntity": {
+                "@type": "Person",
+                "@id": {{ printf "%s#person" .Site.Home.Permalink }},
+                "name": {{ .Site.Params.Author.name | default .Site.Title | safeHTML }},
+                "url": {{ .Permalink }},
+                {{- $image := .Site.Params.seo.image -}}
+                {{- with dict "Path" $image "Resources" .Resources | partial "function/resource.html" -}}
+                    "image": {
+                        "@type": "ImageObject",
+                        "url": {{ .Permalink }},
+                        "width": {{ .Width }},
+                        "height": {{ .Height }}
+                    },
+                {{- else -}}
+                    {{- with $image -}}
+                        "image": {{ . | absURL }},
+                    {{- end -}}
+                {{- end -}}
+                {{- with .Site.Params.seo.alternateName -}}
+                    "alternateName": {{- apply . "safeHTML" "." -}},
+                {{- end -}}
+                {{- with .Site.Params.seo.sameAs -}}
+                    "sameAs": {{ . | jsonify | safeJS }},
+                {{- end -}}
+                "description": {{ .Description | default .Site.Params.description | safeHTML }}
+            }
+        }
+    {{- else -}}
         {{- template "blogPosting" . -}}
+    {{- end -}}
     </script>
 {{- end -}}
