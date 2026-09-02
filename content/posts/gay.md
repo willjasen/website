@@ -3,6 +3,7 @@ title: "on being gay 🏳️‍🌈"
 date: 2021-10-11T19:06:19-04:00
 lastmod: 2025-05-04T18:53:00-04:00
 draft: false
+description: "A personal reflection on being gay, social resistance, identity, and the freedom to live authentically."
 ---
 
 “The thing you need to know is, it’s all about sex.”

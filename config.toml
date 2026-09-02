@@ -36,7 +36,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 [params]
   title = "willjasen"
-  description = "transhumanist and high functioning loser; instantiated simulation, statically stuck in superposition, calculated computationally complex, technomancer at will"
+  description = "willjasen is Brandon's personal website, featuring essays, technical projects, experiments, and links to his work across the web."
   images = ["/android-chrome-512x512.png"]
 
   [params.author]

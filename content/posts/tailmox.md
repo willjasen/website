@@ -3,6 +3,7 @@ title: "tailmox"
 date: 2025-05-04T18:45:44-04:00
 lastmod:    2025-10-26T20:21:00-05:00
 draft: false
+description: "Tailmox connects geographically separate Proxmox VE 8 hosts in a cluster over Tailscale, with practical notes from a year of use."
 ---
 
 [tailmox](https://github.com/willjasen/tailmox) facilitates setting up proxmox v8 hosts in a cluster that communicates over tailscale. why would one wanna do this? it allows hosts to be in a physically separate location yet still perform some cluster functions.

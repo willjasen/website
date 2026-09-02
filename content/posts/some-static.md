@@ -3,6 +3,7 @@ title:      "some static"
 date:       2025-01-21T21:15:35-05:00
 lastmod:    2025-01-22T00:29:00-05:00
 draft:      false
+description: "A short surreal story about an empty bar, an old television, and a man confronting an uncanny loop in the static."
 ---
 
 *This story was originally published on Reddit to /r/AntiAntiJokes in 2020*

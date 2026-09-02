@@ -3,6 +3,7 @@ title:      "create your own darkcloud"
 date:       2024-09-25T21:54:40-04:00
 lastmod:    2025-01-22T16:14:00-05:00
 draft:      false
+description: "A practical guide to building a private self-hosted cloud with Tailscale, Tipi, Docker, and Syncthing."
 ---
 
 ### Intro

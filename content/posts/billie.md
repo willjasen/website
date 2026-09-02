@@ -2,6 +2,7 @@
 title: "billie"
 date: 2025-02-21T00:50:25-05:00
 draft: false
+description: "A tribute to Private First Class Billie Faust Hicks, who was killed in action in Italy during World War II at age 19."
 ---
 
 i have a great uncle named BILLIE who, short of 5 days of being in the united states army for a year, was killed in action in italy, within its european theatre of world war 2, at the young age of 19 (april 3, 1944)

@@ -3,6 +3,7 @@ title: "on lost"
 date: 2026-05-08T18:12:00-04:00
 lastmod: 2026-05-08T18:16:00-04:00
 draft: false
+description: "A personal reflection on Lost, its enduring mysteries, best and worst episodes, and why its characters matter more than the island."
 ---
 
 I just finished my fifth watch-through of the cult classic television show *Lost* - and it still remains my most favorite television series by far - the competition is not even close.

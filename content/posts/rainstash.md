@@ -3,6 +3,7 @@ title:      "rainstash"
 date:       2020-11-27T17:50:15-05:00
 lastmod:    2025-01-22T16:14:00-05:00
 draft:      false
+description: "Rainstash is an AWS CloudFormation template for deploying Resilio Sync securely, with encrypted storage and ephemeral infrastructure."
 ---
 
 [rainstash](https://github.com/willjasen/rainstash) is an Amazon CloudFormation template for automating the setup of Resilio Sync in the Amazon cloud.
@@ -14,4 +15,3 @@ Due to technical and security considerations, rainstash by default only accepts 
 [![GitHub last commit](https://img.shields.io/github/last-commit/willjasen/rainstash)](https://github.com/willjasen/rainstash)
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/willjasen/rainstash)](https://github.com/willjasen/rainstash)
-

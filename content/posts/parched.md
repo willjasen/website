@@ -2,6 +2,7 @@
 title: "parched"
 date: 2021-01-16T18:11:54-05:00
 draft: false
+description: "A surreal anti-anti-joke about a parched man, a broken vending machine, and the heat death of the universe."
 ---
 
 *This was originally published on Reddit to /r/AntiAntiJokes on November 23, 2019*

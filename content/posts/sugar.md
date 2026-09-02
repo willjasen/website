@@ -2,6 +2,7 @@
 title: "💚 sugar 💙"
 date: 2024-12-06T15:00:00-05:00
 draft: false
+description: "A loving memorial to Sugar, the sweetest little cat, and the small rituals that made her unforgettable."
 ---
 
 i have to catch a plane in a few hours but coming back home on monday won’t be as sweet anymore

@@ -3,6 +3,7 @@ title: "welcome! 👋🏻"
 date: 2020-11-22T21:27:40-05:00
 lastmod: 2026-02-17T20:17:22-05:00
 draft: false
+description: "An introduction to Brandon, the origin of the willjasen pseudonym, and the technology behind this personal website."
 ---
 my name is brandon and this is my website!
 
