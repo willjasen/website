@@ -7,3 +7,5 @@ The `themes/DoIt` Git submodule may be uninitialized in a new worktree. Before r
 ```sh
 git submodule update --init --recursive
 ```
+
+Netlify rebuilds the site with Hugo according to `netlify.toml`. Make site changes in the source files rather than editing generated files under `public/` directly.
