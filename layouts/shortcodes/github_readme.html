@@ -1,0 +1,19 @@
+{{- $repo := .Get "repo" | default "willjasen/willjasen" -}}
+{{- $branch := .Get "branch" | default "main" -}}
+{{- $path := .Get "path" | default "README.md" -}}
+{{- $baseURL := printf "https://raw.githubusercontent.com/%s/%s/" $repo $branch -}}
+{{- $remoteURL := printf "%s%s" $baseURL $path -}}
+
+{{- $content := "" -}}
+{{- $resource := resources.GetRemote $remoteURL -}}
+{{- if $resource -}}
+  {{- with $resource -}}
+    {{- $content = .Content -}}
+  {{- end -}}
+{{- else -}}
+  {{- errorf "Unable to fetch GitHub README from %s" $remoteURL -}}
+{{- end -}}
+
+{{- $content = replace $content "](./" (printf "](%s" $baseURL) -}}
+{{- $content = replace $content "src=\"./" (printf "src=\"%s" $baseURL) -}}
+{{- $content | markdownify | safeHTML -}}

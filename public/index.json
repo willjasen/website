@@ -1,14 +1,10 @@
 [{
       "title": "Posts",
-      "permalink": "//localhost:1313/posts/",
+      "permalink": "https://willjasen.com/posts/",
       "content": ""
     }{
-      "title": "search",
-      "permalink": "//localhost:1313/search/",
-      "content": " \u003c!DOCTYPE html\u003e search "
-    },{
-      "title": "about",
-      "permalink": "//localhost:1313/about/",
-      "content": "i chose the pseudonym ‘willjasen’ way back in my sophomore year of high school as a stand-in for a stage name. at the time, i was practicing magic and sleight-of-hand and wanted a new, unique name to go by. my middle name is william, so the first name of ‘will’ was easily chosen. as for the last name of ‘jasen’, i had recently seen a magician on tv named “jasen magic”, and something clicked for me and i put the two together - ‘willjasen’ was then born. i always like to note that the moniker must be in lowercase and squished together - it’s not a proper name! i also use the lowercase stylization throughtout the many forms of online media, just to be different.\nthis website is one of the many that i have created and manage but this one is my primary website. this site is deployed to the interplanetary file system, with help from github and fleek, and design/content management by hugo.\nbitcoin: bc1qffxk4uqgaspuv9w8tnt7qjs63hlvxyda6l38wl ethereum: willjasen.eth view this website on the dark web: zaa5p6jabyoaqt433uiofzalbzaziqhymd6mjjcbhliv4ihjejzhblqd.onion\n\u0026ndash; this website last built\n\u0026ndash; deployed source code size\n\u0026ndash; source code repository size\n\u0026ndash; open source licensing for this website\n"
+      "title": "about willjasen",
+      "permalink": "https://willjasen.com/about/",
+      "content": "my name is brandon and this is my website!\ni chose the pseudonym ‘willjasen’ way back in my sophomore year of high school as a stand-in for a stage name. at the time, i was practicing magic and sleight-of-hand and wanted a new, unique name to go by. my middle name is william, so the first name of ‘will’ was easily chosen. as for the last name of ‘jasen’, i had recently seen a magician on tv named “jasen magic”, and something clicked for me and i put the two together - ‘willjasen’ was then born. i always like to note that the moniker must be in lowercase and squished together - it’s not a proper name! i also use the lowercase stylization throughout the many forms of online media, just to be different.\nthis website is one of the many that i have created and manage but this one is my primary website. this site is deployed to netlify, with its codebase on github, and static site generation with hugo.\nbitcoin: bc1qffxk4uqgaspuv9w8tnt7qjs63hlvxyda6l38wl ethereum: willjasen.eth \u0026ndash; Netlify deployment status\n\u0026ndash; this website last committed\n\u0026ndash; deployed source code size\n\u0026ndash; source code repository size\n\u0026ndash; open source licensing for this website\n"
     },]
   
