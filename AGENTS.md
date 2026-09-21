@@ -8,4 +8,4 @@ The `themes/DoIt` Git submodule may be uninitialized in a new worktree. Before r
 git submodule update --init --recursive
 ```
 
-The production site serves the checked-in `public/` directory without rebuilding Hugo. When changing site assets, update both the source file and its generated counterpart under `public/`.
+Netlify rebuilds the site with Hugo according to `netlify.toml`. Make site changes in the source files rather than editing generated files under `public/` directly.
