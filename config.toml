@@ -8,6 +8,11 @@ languageCode = "en-us"
 summaryLength = 0
 ignoreLogs = ['warning-goldmark-raw-html']
 
+[caches]
+  [caches.getresource]
+    dir = ':cacheDir/:project'
+    maxAge = '10m'
+
 [menu]
   [[menu.main]]
       weight = 1
