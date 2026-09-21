@@ -1,10 +1,11 @@
 [
-    {{- range .Pages -}}
+  {{- $pages := .Pages -}}
+  {{- range $index, $page := $pages -}}
+    {{- if $index }},{{ end }}
     {
-      "title": {{ .Title | jsonify }},
-      "permalink": {{ .Permalink | jsonify }},
-      "content": {{ .Plain | jsonify }}
-    }{{ if not (last 1 .Pages) }},{{ end }}
-    {{- end -}}
-  ]
-  
+      "title": {{ $page.Title | jsonify }},
+      "permalink": {{ $page.Permalink | jsonify }},
+      "content": {{ $page.Plain | jsonify }}
+    }
+  {{- end -}}
+]
