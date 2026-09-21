@@ -1,3 +1,12 @@
 article.single.summary {
     text-align: center;
 }
+
+.single-title a,
+.dark .single-title a,
+.light .single-title a,
+a.archive-item-link,
+.dark a.archive-item-link,
+.light a.archive-item-link {
+    color: skyblue !important;
+}
