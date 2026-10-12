@@ -1,0 +1,20 @@
+name: Netlify daily rebuild
+
+on:
+  schedule:
+    # GitHub Actions schedules use UTC. This is 4:00 AM Eastern during DST.
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify build hook
+        env:
+          NETLIFY_BUILD_HOOK_URL: ${{ secrets.NETLIFY_BUILD_HOOK_URL }}
+        run: >-
+          curl --fail --silent --show-error --retry 3
+          --request POST
+          --data '{}'
+          "$NETLIFY_BUILD_HOOK_URL"
