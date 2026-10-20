@@ -1,0 +1,122 @@
+:root {
+  --status-bg: #edf7fc;
+  --status-card: #ffffff;
+  --status-text: #183044;
+  --status-muted: #547083;
+  --status-border: #c8e5f3;
+  --status-hover: #e1f3fc;
+  --status-accent: #168ac0;
+  --status-tint: #e1f3fc;
+}
+
+.dark {
+  --status-bg: #091522;
+  --status-card: #101f2e;
+  --status-text: #e2f2fb;
+  --status-muted: #9bb8c9;
+  --status-border: #24455c;
+  --status-hover: #162d40;
+  --status-accent: #7dd3fc;
+  --status-tint: #132d40;
+
+  background-color: var(--status-bg);
+  color: var(--status-text);
+}
+
+body {
+  background: var(--status-bg) !important;
+  color: var(--status-text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3rem) 1.25rem;
+  color: var(--status-text);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+h1 img {
+  border-radius: 50%;
+}
+
+.overall-status {
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--status-border);
+  border-left: 5px solid var(--status-accent);
+  border-radius: 16px;
+  background: var(--status-tint);
+  color: var(--status-text);
+  box-shadow: 0 10px 30px rgb(22 138 192 / 12%);
+}
+
+.overall-status .ok {
+  color: #168354 !important;
+}
+
+.dark .overall-status .ok {
+  color: #65dda1 !important;
+}
+
+.group-title {
+  margin: 2rem 0 1rem;
+  padding: 0.55rem 0.85rem;
+  border-left: 4px solid var(--status-accent);
+  border-bottom: 1px solid var(--status-border);
+  border-radius: 0 8px 8px 0;
+  background: var(--status-tint);
+  color: var(--status-text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.shadow-box {
+  border: 1px solid var(--status-border);
+  border-radius: 14px;
+  background: var(--status-card);
+  color: var(--status-text);
+  box-shadow: 0 8px 28px rgb(22 138 192 / 8%);
+}
+
+.monitor-list .item {
+  border-radius: 10px;
+  transition: background-color 0.15s ease;
+}
+
+.monitor-list .item:hover,
+.monitor-list .item.active {
+  background-color: var(--status-hover) !important;
+}
+
+.hp-bar-big {
+  overflow: hidden;
+  border-radius: 999px;
+}
+
+a {
+  color: var(--status-accent) !important;
+}
+
+footer {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--status-border);
+  color: var(--status-muted);
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .overall-status {
+    padding: 1rem;
+  }
+}
