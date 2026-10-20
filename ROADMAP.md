@@ -2,6 +2,9 @@
 
 ## Restore Lunr.js search
 
+**Status:** Implemented and verified locally. `node --test tests/search.test.js`
+passes, and browser checks passed against the site served through OrbStack.
+
 Restore the site's client-side search using the earlier implementation as a
 known-working baseline, then correct its regressions before making it public.
 
@@ -16,9 +19,8 @@ known-working baseline, then correct its regressions before making it public.
   field is named `permalink`. That mismatch leaves result links undefined.
 - `15ece00` added the notice that search was not working. `a0afb59` made the
   search page a draft, and `4af4c75` removed it from the navigation.
-- The current shortcode still has the `uri`/`permalink` mismatch and debug
-  logging. The page remains a draft, while the local Lunr library and JSON
-  output template are still present.
+- When this roadmap was written, the shortcode still had the `uri`/`permalink`
+  mismatch and debug logging, and the search page was still a draft.
 
 ### Implementation plan
 
@@ -69,8 +71,11 @@ known-working baseline, then correct its regressions before making it public.
 
 ### Relevant files
 
-- `content/search.md` - currently a draft and says search is not working.
-- `layouts/shortcodes/search.html` - existing unfinished Lunr UI.
+- `content/search.md` - published search page, excluded from the index.
+- `layouts/shortcodes/search.html` - theme-native Lunr search UI.
 - `layouts/partials/lunr-script.html` - local Lunr script include.
-- `layouts/_default/list.json` - current generated JSON fields.
+- `layouts/index.json` - generated home search index fields.
 - `static/scripts/lunr.min.js` - bundled Lunr.js.
+- `static/scripts/search.js` - search initialization, query handling, and result
+  rendering.
+- `tests/search.test.js` - index generation and Lunr regression tests.

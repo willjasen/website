@@ -1,0 +1,13 @@
+[
+  {{- $pages := where .Site.RegularPages "Params.noindex" "!=" true -}}
+  {{- range $index, $page := $pages -}}
+    {{- if $index }},{{ end }}
+    {
+      "title": {{ $page.Title | jsonify }},
+      "url": {{ $page.RelPermalink | jsonify }},
+      "date": {{ if not $page.Date.IsZero }}{{ $page.Date.Format "2006-01-02" | jsonify }}{{ else }}""{{ end }},
+      "description": {{ $page.Description | jsonify }},
+      "content": {{ $page.Plain | jsonify }}
+    }
+  {{- end -}}
+]
