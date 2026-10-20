@@ -59,10 +59,16 @@ test("Lunr returns pages with valid local result URLs", () => {
 test("search page and site navigation are generated", () => {
   const searchPage = fs.readFileSync(path.join(outputDirectory, "search", "index.html"), "utf8");
   const homePage = fs.readFileSync(path.join(outputDirectory, "index.html"), "utf8");
+  const stylesheet = fs.readFileSync(path.join(outputDirectory, "css", "style.min.css"), "utf8");
+  const searchScript = fs.readFileSync(path.join(outputDirectory, "scripts", "search.js"), "utf8");
 
   assert.match(searchPage, /id=["']?search-box/);
+  assert.match(searchPage, /site-search-field/);
+  assert.match(searchPage, /<svg aria-hidden/);
   assert.match(searchPage, /Search this site/);
   assert.match(searchPage, /scripts\/search\.js/);
   assert.match(homePage, /href=["']?\/search\//);
   assert.ok(fs.existsSync(path.join(outputDirectory, "scripts", "search.js")));
+  assert.match(stylesheet, /site-search-field:focus-within/);
+  assert.doesNotMatch(searchScript, /Enter a search term to find pages\./);
 });
