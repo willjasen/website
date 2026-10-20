@@ -2,51 +2,75 @@
 
 ## Restore Lunr.js search
 
-Bring client-side search back to the website using Lunr.js. The existing
-implementation is an unfinished draft, so treat it as a reference rather than
-assuming it can be enabled as-is.
+Restore the site's client-side search using the earlier implementation as a
+known-working baseline, then correct its regressions before making it public.
 
-### Work plan
+### What Git history shows
 
-1. **Define the search index**
-   - Review `layouts/_default/list.json` and choose which published pages should
-     be searchable.
-   - Make the JSON fields and URLs consistent with the search UI. The current
-     template emits `title`, `permalink`, and `content`, while the old shortcode
-     expects `title`, `uri`, and `date`.
-   - Exclude drafts and irrelevant pages; confirm how dates and non-post pages
-     should be represented.
-2. **Rebuild the search page and client behavior**
-   - Replace the unfinished `layouts/shortcodes/search.html` implementation
-     with a page using the site's normal Hugo layout.
-   - Load the locally bundled `static/scripts/lunr.min.js` and the generated
-     index; remove debug logging and avoid unsafe HTML insertion.
-   - Handle empty queries, no matches, index-loading failures, and malformed
-     search input without breaking the page.
-   - Provide accessible labels, keyboard-friendly results, and useful result
-     links; add a clear way for visitors to reach search from the site.
-3. **Verify generation and deployment**
-   - Build the site and confirm the published search page and JSON index are
-     generated at stable URLs.
-   - Test representative queries, result links, empty/no-result states, and
-     index-loading failures in a browser.
-   - Confirm the implementation works with the Netlify Hugo build and does not
-     require generated files under `public/` to be edited by hand.
+- `61de988` introduced the search page, the home JSON output, and a JSON
+  template with `title`, `permalink`, and `content`.
+- `4991a06` is titled "minimum searching works". Its key change was using
+  `title` as Lunr's document reference; the prior implementation used
+  `permalink` as the reference and did not return results.
+- `fbf3d5c` changed result rendering to read `item.uri`, even though the index
+  field is named `permalink`. That mismatch leaves result links undefined.
+- `15ece00` added the notice that search was not working. `a0afb59` made the
+  search page a draft, and `4af4c75` removed it from the navigation.
+- The current shortcode still has the `uri`/`permalink` mismatch and debug
+  logging. The page remains a draft, while the local Lunr library and JSON
+  output template are still present.
+
+### Implementation plan
+
+1. **Re-establish a working baseline**
+   - Compare the current shortcode and JSON template with their versions at
+     `4991a06`; use that commit as a behavioral reference, not a blind rollback.
+   - Keep the local Lunr.js asset and the generated home JSON index.
+   - Agree on one index schema. Use a unique stable document reference (the
+     permalink is a better key than title), and ensure Lunr's configured `ref`,
+     index fields, result lookup, and anchor URL all use that schema.
+2. **Build the index for the intended content**
+   - Confirm the Hugo home JSON output includes the intended published pages,
+     and excludes drafts and non-searchable taxonomy/list pages.
+   - Include the fields the interface will actually display: title, URL,
+     searchable plain text, and date where it applies.
+   - Keep the JSON template valid for empty and single-item collections;
+     inspect the generated JSON rather than relying on hand-edited `public/`
+     output.
+3. **Make the search page production-ready**
+   - Replace the shortcode's standalone nested HTML document with markup and
+     behavior that fit the site's Hugo theme page.
+   - Preserve the previously working search behavior, then remove console
+     debugging and use DOM text APIs rather than interpolating result data into
+     HTML.
+   - Handle blank input, no results, failed index loads, and invalid queries;
+     provide an accessible input label and result/status announcements.
+   - Remove the draft flag and restore a navigation link only after the page
+     and index pass the checks below.
+4. **Verify locally and in deployment**
+   - Initialize the DoIt submodule if needed, then run the same Hugo build
+     configured by Netlify.
+   - Verify `public/index.json` parses and contains expected published entries,
+     and that `/search/` and its local script are generated/reachable.
+   - Test a known query, a no-match query, blank input, valid result URLs, and
+     an index-load failure in a browser.
+   - Confirm the Netlify build does not depend on manually editing generated
+     files.
 
 ### Completion criteria
 
-- Search is reachable from the website and searches the intended published
-  content.
-- Results link to valid pages and show useful context, including dates where
-  applicable.
+- Search is published and reachable through site navigation.
+- Queries return expected results with working links and useful metadata.
+- The index schema agrees end-to-end: generated JSON, Lunr configuration,
+  result lookup, and displayed URL.
 - Empty, unmatched, and failed searches have clear, accessible behavior.
-- The Hugo build and deployed site generate and serve the index correctly.
+- The Hugo/Netlify build produces the page and index without manual generated
+  file changes.
 
-### Existing starting points
+### Relevant files
 
-- `content/search.md` is a draft page and currently says the search is not
-  working.
-- `layouts/shortcodes/search.html` contains the unfinished Lunr.js UI.
-- `layouts/partials/lunr-script.html` loads the local Lunr.js library.
-- `layouts/_default/list.json` defines the current JSON output fields.
-- `static/scripts/lunr.min.js` is the bundled Lunr.js library.
+- `content/search.md` - currently a draft and says search is not working.
+- `layouts/shortcodes/search.html` - existing unfinished Lunr UI.
+- `layouts/partials/lunr-script.html` - local Lunr script include.
+- `layouts/_default/list.json` - current generated JSON fields.
+- `static/scripts/lunr.min.js` - bundled Lunr.js.
