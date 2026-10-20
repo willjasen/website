@@ -2,12 +2,18 @@
   {{- $pages := where .Site.RegularPages "Params.noindex" "!=" true -}}
   {{- range $index, $page := $pages -}}
     {{- if $index }},{{ end }}
+    {{- $date := "" -}}
+    {{- if not $page.Date.IsZero -}}
+      {{- $date = $page.Date.Format "2006-01-02" -}}
+    {{- end -}}
+    {{- $metadata := dict "description" $page.Description "date" $date -}}
     {
       "title": {{ $page.Title | jsonify }},
       "url": {{ $page.RelPermalink | jsonify }},
-      "date": {{ if not $page.Date.IsZero }}{{ $page.Date.Format "2006-01-02" | jsonify }}{{ else }}""{{ end }},
       "description": {{ $page.Description | jsonify }},
-      "content": {{ $page.Plain | jsonify }}
+      "date": {{ $date | jsonify }},
+      "metadata": {{ $metadata | jsonify | jsonify }},
+      "body": {{ $page.Plain | jsonify }}
     }
   {{- end -}}
 ]
