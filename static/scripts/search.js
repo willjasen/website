@@ -50,7 +50,7 @@
     clearResults();
 
     if (!query) {
-      setStatus("Enter a search term to find pages.");
+      setStatus("");
       return;
     }
 
@@ -87,7 +87,7 @@
 
       input.disabled = false;
       input.addEventListener("input", () => runSearch(index));
-      setStatus("Enter a search term to find pages.");
+      setStatus("");
     })
     .catch(() => {
       setStatus("Search is unavailable because its index could not be loaded.");

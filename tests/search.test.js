@@ -60,6 +60,7 @@ test("search page and site navigation are generated", () => {
   const searchPage = fs.readFileSync(path.join(outputDirectory, "search", "index.html"), "utf8");
   const homePage = fs.readFileSync(path.join(outputDirectory, "index.html"), "utf8");
   const stylesheet = fs.readFileSync(path.join(outputDirectory, "css", "style.min.css"), "utf8");
+  const searchScript = fs.readFileSync(path.join(outputDirectory, "scripts", "search.js"), "utf8");
 
   assert.match(searchPage, /id=["']?search-box/);
   assert.match(searchPage, /site-search-field/);
@@ -69,4 +70,5 @@ test("search page and site navigation are generated", () => {
   assert.match(homePage, /href=["']?\/search\//);
   assert.ok(fs.existsSync(path.join(outputDirectory, "scripts", "search.js")));
   assert.match(stylesheet, /site-search-field:focus-within/);
+  assert.doesNotMatch(searchScript, /Enter a search term to find pages\./);
 });
