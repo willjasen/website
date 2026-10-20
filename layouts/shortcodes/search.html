@@ -1,6 +1,12 @@
 <section class="site-search" data-search-index="{{ "index.json" | relURL }}">
     <label for="search-box">Search this site</label>
-    <input type="search" id="search-box" placeholder="Enter a search term" autocomplete="off" disabled>
+    <div class="site-search-field">
+        <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+            <circle cx="10.8" cy="10.8" r="6.8"></circle>
+            <path d="m16 16 5 5"></path>
+        </svg>
+        <input type="search" id="search-box" placeholder="Search posts and pages..." autocomplete="off" aria-describedby="search-status" disabled>
+    </div>
     <p id="search-status" role="status" aria-live="polite">Loading search index...</p>
     <ul id="search-results"></ul>
 </section>
